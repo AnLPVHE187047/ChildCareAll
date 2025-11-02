@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "ChildCare.Api\\ChildCare.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "ChildCareAdmin\\ChildCareAdmin.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

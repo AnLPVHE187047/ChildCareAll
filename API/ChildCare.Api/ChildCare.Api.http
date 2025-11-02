@@ -1,0 +1,6 @@
+@ChildCare.Api_HostAddress = http://localhost:5224
+
+GET {{ChildCare.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

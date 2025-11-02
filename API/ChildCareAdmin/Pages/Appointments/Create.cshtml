@@ -1,0 +1,34 @@
+﻿@page
+@model ChildCareAdmin.Pages.Appointments.CreateModel
+
+<h2>Create Appointment</h2>
+
+<form method="post">
+    <div class="mb-3">
+        <label>User ID</label>
+        <input asp-for="Appointment.UserID" type="number" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Service ID</label>
+        <input asp-for="Appointment.ServiceID" type="number" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Staff ID</label>
+        <input asp-for="Appointment.StaffID" type="number" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Date</label>
+        <input asp-for="Appointment.AppointmentDate" type="date" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Time</label>
+        <input asp-for="Appointment.AppointmentTime" type="time" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Address</label>
+        <input asp-for="Appointment.Address" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>

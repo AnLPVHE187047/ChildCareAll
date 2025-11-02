@@ -1,0 +1,2120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\users\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\users\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\users\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\users\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\repositories\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\users\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\users\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\users\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\models\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\models\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\services\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\childcare.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\childcare.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\controllers\\staffcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\services\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\services\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\services\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\services\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\models\\servicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\models\\servicedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\models\\serviceuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\models\\serviceuploaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\models\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\models\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\repositories\\iservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\iservicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\models\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\dtos\\servicedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\dtos\\servicedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\repositories\\istaffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\istaffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\dtos\\staffdropdowndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\dtos\\staffdropdowndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\repositories\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\services\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\services\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\repositories\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\services\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\services\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\services\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\services\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\appointments\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\appointments\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\appointments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\appointments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\users\\changepassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\users\\changepassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\users\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\users\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\auth\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\auth\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\dtos\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\dtos\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\dtos\\registerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\childcare.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\childcare.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\appointments\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\appointments\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\pages\\appointments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\appointments\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcareadmin\\models\\feedbackdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\models\\feedbackdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\repositories\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\dtos\\feedbackdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\dtos\\feedbackdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|c:\\users\\user\\source\\repos\\childcare.api\\childcare.api\\models\\childcaredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\models\\childcaredbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 219,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1646721036:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2102939616:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{fabf9319-47eb-497e-b8f6-d9f73fba5f55}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1377497384:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{588470cc-84f8-4a57-9ac4-86bca0625ff4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1928210406:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:350743133:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:34:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f53-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f5cd1b51-c771-5648-966f-646d419b1e7c}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:41:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:30:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:148:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:140:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:139:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:38:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:69:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:70:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:71:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:69:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:73:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:72:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:54:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0504ff91-9d61-11d0-a794-00a0c9110051}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:93:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:37:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:49:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:68:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:67:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:33:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:45:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:45:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1196186238:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:46:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:47:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:63:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:64:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:65:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:32:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:37:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:39:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:40:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:43:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:42:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:41:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{99a11807-c5db-4877-ad35-09b56a044012}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{9a7cebbb-dc5c-4986-bc49-962da46aa506}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:48:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:141:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:143:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:144:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:145:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:142:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:146:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:147:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{605322a2-17ae-43f4-b60f-766556e46c87}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:44:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:63:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:74:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:74:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:75:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:76:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:77:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:78:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:44:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:31:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:34:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{26341fe2-71dd-46fd-bb1b-2e51a92a0d64}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{80c411e8-fd5e-4b16-914b-0d9d84172cc1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c93a910a-0fa6-4307-93a4-f2bd61ec7828}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{6bf11835-8a31-496c-b01e-94f731afc7ce}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:48:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:62:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:81:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:36:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAANkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:51:00.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\UserDTOs.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\DTOs\\UserDTOs.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\UserDTOs.cs",
+              "RelativeToolTip": "ChildCare.Api\\DTOs\\UserDTOs.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:49:07.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\UserDTO.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Models\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\UserDTO.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Models\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T10:26:51.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ChildCare.Api\\Controllers\\UserController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAIwGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:52:56.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Models\\User.cs",
+              "RelativeToolTip": "ChildCare.Api\\Models\\User.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:51:39.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:50:27.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Index.cshtml",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Index.cshtml",
+              "ViewState": "AgIAACAAAAAAAAAAAAAmwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T10:26:19.272Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAUwDUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T10:26:30.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Program.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Program.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T08:48:53.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Program.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Program.cs",
+              "RelativeToolTip": "ChildCare.Api\\Program.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:38:29.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Edit.cshtml.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Edit.cshtml.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAADwv10AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T10:30:15.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Edit.cshtml",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Edit.cshtml",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvyoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T10:29:59.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServiceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\ServiceRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\ServiceRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\ServiceRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\ServiceRepository.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAwwGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:43:46.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ChildCare.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAADgv1YAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T10:37:46.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Create.cshtml.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Create.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T08:20:02.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Create.cshtml",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Create.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\Create.cshtml",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Create.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAADwvyMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-02T08:19:57.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserCreateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\UserCreateDTO.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Models\\UserCreateDTO.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\UserCreateDTO.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Models\\UserCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T08:22:56.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Index.cshtml",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Services\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Index.cshtml",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Services\\Index.cshtml",
+              "ViewState": "AgIAADcAAAAAAAAAAADwv1wAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T09:24:04.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ChildCare.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\ChildCare.Api.csproj",
+              "RelativeDocumentMoniker": "ChildCare.Api\\ChildCare.Api.csproj",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\ChildCare.Api.csproj",
+              "RelativeToolTip": "ChildCare.Api\\ChildCare.Api.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-24T07:36:41.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\AppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\AppointmentRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\AppointmentRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswDYAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:59:15.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IAppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:56:55.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "StaffRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\StaffRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\StaffRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\StaffRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\StaffRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAwwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:40:40.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AppointmentDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
+              "RelativeToolTip": "ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA+wB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:49:45.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Models\\Appointment.cs",
+              "RelativeToolTip": "ChildCare.Api\\Models\\Appointment.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAxwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:55:28.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "ChildCare.Api\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAowGQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T08:27:50.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "StaffController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\StaffController.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\StaffController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\StaffController.cs",
+              "RelativeToolTip": "ChildCare.Api\\Controllers\\StaffController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:42:14.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\ServiceController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "ChildCare.Api\\Controllers\\ServiceController.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAAwJYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:44:58.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Services\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Edit.cshtml",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Services\\Edit.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T10:04:36.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\appsettings.json",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\appsettings.json",
+              "RelativeToolTip": "ChildCareAdmin\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-24T08:46:48.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Services\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Index.cshtml.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Services\\Index.cshtml.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:24:13.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ServiceDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\ServiceDTO.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Models\\ServiceDTO.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\ServiceDTO.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Models\\ServiceDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:23:26.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ServiceUploadDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\ServiceUploadDTO.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Models\\ServiceUploadDTO.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\ServiceUploadDTO.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Models\\ServiceUploadDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T06:08:46.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AppointmentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\AppointmentDTO.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Models\\AppointmentDTO.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\AppointmentDTO.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Models\\AppointmentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:33:58.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "IServiceRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\IServiceRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\IServiceRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\IServiceRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\IServiceRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:43:01.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Service.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Models\\Service.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Models\\Service.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Models\\Service.cs",
+              "RelativeToolTip": "ChildCare.Api\\Models\\Service.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T06:16:09.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ServiceDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\ServiceDTOs.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\DTOs\\ServiceDTOs.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\ServiceDTOs.cs",
+              "RelativeToolTip": "ChildCare.Api\\DTOs\\ServiceDTOs.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:54:06.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IStaffRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\IStaffRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\IStaffRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\IStaffRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\IStaffRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:37:54.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "ChildCare.Api\\DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T10:36:07.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "StaffDropdownDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\StaffDropdownDTO.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\DTOs\\StaffDropdownDTO.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\StaffDropdownDTO.cs",
+              "RelativeToolTip": "ChildCare.Api\\DTOs\\StaffDropdownDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T08:40:14.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Services\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Edit.cshtml.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Services\\Edit.cshtml.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAADwvz8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T10:04:42.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "FileHelper.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\FileHelper.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\FileHelper.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\FileHelper.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\FileHelper.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwEAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T10:33:58.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IFeedbackRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\IFeedbackRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\IFeedbackRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\IFeedbackRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\IFeedbackRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:57:15.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Services\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Create.cshtml.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Services\\Create.cshtml.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAA0wC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T10:04:20.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Create.cshtml",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Services\\Create.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Services\\Create.cshtml",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Services\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T10:04:10.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Appointments\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Appointments\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Appointments\\Index.cshtml.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Appointments\\Index.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:35:42.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Appointments\\Index.cshtml",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Appointments\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Appointments\\Index.cshtml",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Appointments\\Index.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAIwCYAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T09:35:36.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "ChangePassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\ChangePassword.cshtml.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\ChangePassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\ChangePassword.cshtml.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\ChangePassword.cshtml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA3wBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T10:34:08.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Users\\ChangePassword.cshtml",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T10:34:00.826Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Auth\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Auth\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Auth\\Login.cshtml.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Auth\\Login.cshtml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T17:20:59.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Auth\\Login.cshtml",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Auth\\Login.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T17:20:26.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\DTOs\\RegisterDTO.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\RegisterDTO.cs",
+              "RelativeToolTip": "ChildCare.Api\\DTOs\\RegisterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T16:34:10.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "RegisterResponse.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\RegisterResponse.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\DTOs\\RegisterResponse.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\RegisterResponse.cs",
+              "RelativeToolTip": "ChildCare.Api\\DTOs\\RegisterResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T16:36:19.419Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "ChildCare.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\appsettings.json",
+              "RelativeToolTip": "ChildCare.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-24T07:34:58.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "ChildCare.Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAIwAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-29T11:45:17.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ChildCare.Api.http",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\ChildCare.Api.http",
+              "RelativeDocumentMoniker": "ChildCare.Api\\ChildCare.Api.http",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\ChildCare.Api.http",
+              "RelativeToolTip": "ChildCare.Api\\ChildCare.Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-24T10:38:05.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAUwCIAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T10:19:38.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Appointments\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Appointments\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Appointments\\Create.cshtml.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Appointments\\Create.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T10:05:08.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Appointments\\Create.cshtml",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Appointments\\Create.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Pages\\Appointments\\Create.cshtml",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Appointments\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-24T10:05:01.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\FeedbackController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "ChildCare.Api\\Controllers\\FeedbackController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T08:28:07.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "FeedbackDTO.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\FeedbackDTO.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Models\\FeedbackDTO.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCareAdmin\\Models\\FeedbackDTO.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Models\\FeedbackDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T09:34:28.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Models\\Feedback.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Models\\Feedback.cs",
+              "RelativeToolTip": "ChildCare.Api\\Models\\Feedback.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T08:26:30.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "FeedbackRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\FeedbackRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\FeedbackRepository.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Repositories\\FeedbackRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\FeedbackRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwEoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T08:25:08.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "FeedbackDTOs.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\FeedbackDTOs.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\DTOs\\FeedbackDTOs.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\DTOs\\FeedbackDTOs.cs",
+              "RelativeToolTip": "ChildCare.Api\\DTOs\\FeedbackDTOs.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:56:08.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ChildCareDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Models\\ChildCareDbContext.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Models\\ChildCareDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\Models\\ChildCareDbContext.cs",
+              "RelativeToolTip": "ChildCare.Api\\Models\\ChildCareDbContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:40:36.91Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 108,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5b6781c0-e99d-11d0-9954-00a0c91bc8e5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:31:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:32:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:53:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:67:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:68:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:73:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:78:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:81:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 225,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:43:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:35:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{260978c3-582c-487d-ab12-c1fdde07c578}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:36:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:38:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:39:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:40:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:42:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{93c5e7ad-af06-49e6-a756-b8f3eaca790d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:33:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:30:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:35:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

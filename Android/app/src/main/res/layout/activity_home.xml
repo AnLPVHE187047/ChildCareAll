@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- MAIN CONTENT -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#F9F9F9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4DB6AC"
+            android:elevation="4dp"
+            android:paddingVertical="12dp"
+            android:paddingHorizontal="16dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:id="@+id/btnMenu"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/ic_menu"
+                app:tint="@android:color/white"
+                android:layout_gravity="start|center_vertical"
+                android:contentDescription="Menu" />
+
+
+            <TextView
+                android:id="@+id/tvAppTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="ChildCare Services"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Search -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_search"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="#888" />
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:hint="Search services..."
+                android:textColorHint="#999"
+                android:background="@null"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <!-- Filter Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginBottom="8dp"
+            android:background="@android:color/white"
+            android:padding="12dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter by Price"
+                android:textSize="14sp"
+                android:textColor="#333"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/spinnerPriceFilter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_search"
+                android:padding="10dp"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btnClearFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Clear"
+                    android:textSize="12sp"
+                    android:backgroundTint="#999"
+                    android:layout_marginEnd="8dp" />
+
+                <Button
+                    android:id="@+id/btnApplyFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Apply Filter"
+                    android:textSize="12sp"
+                    android:backgroundTint="#4DB6AC" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvServices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingHorizontal="8dp"
+            android:paddingBottom="8dp"
+            android:clipToPadding="false" />
+    </LinearLayout>
+
+    <!-- DRAWER MENU -->
+    <LinearLayout
+        android:id="@+id/navView"
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_gravity="start">
+
+        <TextView
+            android:id="@+id/tvGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xin chào, User!"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#4DB6AC"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:id="@+id/navHome"
+            style="@style/NavItem"
+            android:text="Trang chủ"/>
+
+        <TextView
+            android:id="@+id/navProfile"
+            style="@style/NavItem"
+            android:text="Profile"/>
+
+        <TextView
+            android:id="@+id/navSchedule"
+            style="@style/NavItem"
+            android:text="Lịch của tôi"/>
+
+        <TextView
+            android:id="@+id/navLogout"
+            style="@style/NavItem"
+            android:text="Đăng xuất"/>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,56 @@
+﻿@page
+@model ChildCareAdmin.Pages.Users.IndexModel
+@{
+    ViewData["Title"] = "Manage Users";
+}
+
+<h2>Manage Users</h2>
+
+<a class="btn btn-success mb-3" asp-page="Create">+ Add User</a>
+
+<form method="get" class="mb-3">
+    <input type="text" name="SearchQuery" placeholder="Search by name or email" class="form-control mb-1" value="@Model.SearchQuery" />
+    <select name="RoleFilter" class="form-select mb-1">
+        <option value="">All Roles</option>
+        <option value="Parent" selected="@(Model.RoleFilter=="Parent")">Parent</option>
+        <option value="Staff" selected="@(Model.RoleFilter=="Staff")">Staff</option>
+        <option value="Admin" selected="@(Model.RoleFilter=="Admin")">Admin</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Filter</button>
+</form>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Image</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Model.Users)
+        {
+            <tr>
+                <td>@u.FullName</td>
+                <td>@u.Email</td>
+                <td>@u.Phone</td>
+                <td>@u.Role</td>
+                <td>@(u.IsActive ? "Active" : "Inactive")</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(u.ImageUrl))
+                    {
+                        <img src="@u.ImageUrl" width="60" height="60" style="border-radius:50%;" />
+                    }
+                </td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@u.UserID" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-page="ChangePassword" asp-route-id="@u.UserID" class="btn btn-info btn-sm">Change Password</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

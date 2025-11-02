@@ -1,0 +1,33 @@
+﻿@page "{id:int}"
+@model ChildCareAdmin.Pages.Services.EditModel
+<h2>Edit Service</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Service.ServiceID" />
+    <div class="mb-3">
+        <label>Name</label>
+        <input asp-for="Service.Name" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Description</label>
+        <textarea asp-for="Service.Description" class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+        <label>Price</label>
+        <input asp-for="Service.Price" type="number" step="0.01" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Duration</label>
+        <input asp-for="Service.DurationMinutes" type="number" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Image</label>
+        <input asp-for="Service.ImageFile" type="file" class="form-control" />
+        @if (!string.IsNullOrEmpty(Model.Service.ImageUrl))
+        {
+            <img src="@Model.Service.ImageUrl" width="100" class="mt-2" />
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>

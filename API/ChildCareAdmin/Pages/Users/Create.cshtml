@@ -1,0 +1,35 @@
+﻿@page
+@model ChildCareAdmin.Pages.Users.CreateModel
+<h2>Create User</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label>Full Name</label>
+        <input asp-for="User.FullName" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Email</label>
+        <input asp-for="User.Email" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Phone</label>
+        <input asp-for="User.Phone" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Password</label>
+        <input asp-for="User.Password" type="password" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Role</label>
+        <select asp-for="User.Role" class="form-select">
+            <option value="Parent">Parent</option>
+            <option value="Staff">Staff</option>
+            <option value="Admin">Admin</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label>Profile Image</label>
+        <input asp-for="User.ImageFile" type="file" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

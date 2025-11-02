@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Khám da liễu.jpg",
+      "PackagePath": "staticwebassets\\images\\services\\Khám da liễu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png",
+      "PackagePath": "staticwebassets\\images\\services\\Screenshot 2025-10-29 154632.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
+      "PackagePath": "staticwebassets\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg",
+      "PackagePath": "staticwebassets\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg",
+      "PackagePath": "staticwebassets\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg",
+      "PackagePath": "staticwebassets\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
+      "PackagePath": "staticwebassets\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
+      "PackagePath": "staticwebassets\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
+      "PackagePath": "staticwebassets\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ChildCare.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ChildCare.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ChildCare.Api.props",
+      "PackagePath": "build\\ChildCare.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ChildCare.Api.props",
+      "PackagePath": "buildMultiTargeting\\ChildCare.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ChildCare.Api.props",
+      "PackagePath": "buildTransitive\\ChildCare.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,166 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ChildCare.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ChildCare.Api</BasePath>
+      <RelativePath>images/services/dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>0j1yszq8l9</Fingerprint>
+      <Integrity>xBsT2/yErFOb3qBaphvPx7fEQe8o3aLr6I/1ip38rQg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\kham-suc-khoe-cho-be_0004171_710.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ChildCare.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ChildCare.Api</BasePath>
+      <RelativePath>images/services/kham-suc-khoe-cho-be_0004171_710.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>i8670rurgw</Fingerprint>
+      <Integrity>Ugd5AU/SKpsC8iGhH/3tglV2yM+AJgCQTo5F2z7W65Y=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\kham-suc-khoe-cho-be_0004171_710.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\Khám da liễu.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ChildCare.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ChildCare.Api</BasePath>
+      <RelativePath>images/services/Khám da liễu.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>llmxhfgc5w</Fingerprint>
+      <Integrity>V8JjK8E6erecz1JTGC4K/AQsprMp5cohvpmGGN1Uwc4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\Khám da liễu.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\Screenshot 2025-10-29 154632.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ChildCare.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ChildCare.Api</BasePath>
+      <RelativePath>images/services/Screenshot 2025-10-29 154632.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>euyr00xn3j</Fingerprint>
+      <Integrity>2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\Screenshot 2025-10-29 154632.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\tiem_vac_xin_cho_tre_2207213354.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ChildCare.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ChildCare.Api</BasePath>
+      <RelativePath>images/services/tiem_vac_xin_cho_tre_2207213354.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wyv1j9agjk</Fingerprint>
+      <Integrity>GK816tYGKD4E8nc6eWxBEZRdnuME4HI3SVFICBraf/I=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\tiem_vac_xin_cho_tre_2207213354.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\tu-van-dinh-duong-cho-be-ava.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ChildCare.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ChildCare.Api</BasePath>
+      <RelativePath>images/services/tu-van-dinh-duong-cho-be-ava.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ekwh8p36sk</Fingerprint>
+      <Integrity>4oQ9CLr6tOC1zR8SU75UN5djuTs/y7rxJ983ClDOduQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\services\tu-van-dinh-duong-cho-be-ava.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ChildCare.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ChildCare.Api</BasePath>
+      <RelativePath>uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>b8siqmq2b2</Fingerprint>
+      <Integrity>lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p+I8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ChildCare.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ChildCare.Api</BasePath>
+      <RelativePath>uploads/8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zqzccpxd8e</Fingerprint>
+      <Integrity>+x+Rm7hrZyQubKagJWQ6EdcYijwlpkMpDmzQRZ+JHpI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ChildCare.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ChildCare.Api</BasePath>
+      <RelativePath>uploads/f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>euyr00xn3j</Fingerprint>
+      <Integrity>2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

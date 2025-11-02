@@ -1,0 +1,949 @@
+{
+  "Version": 1,
+  "Hash": "lEctuxSbNu1MTO76x6l6IHPSukhdyrkotaDJzGZIv+w=",
+  "Source": "ChildCare.Api",
+  "BasePath": "_content/ChildCare.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ChildCare.Api\\wwwroot",
+      "Source": "ChildCare.Api",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "BasePath": "_content/ChildCare.Api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
+      "SourceId": "ChildCare.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "BasePath": "_content/ChildCare.Api",
+      "RelativePath": "images/services/dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0j1yszq8l9",
+      "Integrity": "xBsT2/yErFOb3qBaphvPx7fEQe8o3aLr6I/1ip38rQg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Khám da liễu.jpg",
+      "SourceId": "ChildCare.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "BasePath": "_content/ChildCare.Api",
+      "RelativePath": "images/services/Khám da liễu#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "llmxhfgc5w",
+      "Integrity": "V8JjK8E6erecz1JTGC4K/AQsprMp5cohvpmGGN1Uwc4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\services\\Khám da liễu.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg",
+      "SourceId": "ChildCare.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "BasePath": "_content/ChildCare.Api",
+      "RelativePath": "images/services/kham-suc-khoe-cho-be_0004171_710#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i8670rurgw",
+      "Integrity": "Ugd5AU/SKpsC8iGhH/3tglV2yM+AJgCQTo5F2z7W65Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png",
+      "SourceId": "ChildCare.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "BasePath": "_content/ChildCare.Api",
+      "RelativePath": "images/services/Screenshot 2025-10-29 154632#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "euyr00xn3j",
+      "Integrity": "2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg",
+      "SourceId": "ChildCare.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "BasePath": "_content/ChildCare.Api",
+      "RelativePath": "images/services/tiem_vac_xin_cho_tre_2207213354#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wyv1j9agjk",
+      "Integrity": "GK816tYGKD4E8nc6eWxBEZRdnuME4HI3SVFICBraf/I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg",
+      "SourceId": "ChildCare.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "BasePath": "_content/ChildCare.Api",
+      "RelativePath": "images/services/tu-van-dinh-duong-cho-be-ava#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ekwh8p36sk",
+      "Integrity": "4oQ9CLr6tOC1zR8SU75UN5djuTs/y7rxJ983ClDOduQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
+      "SourceId": "ChildCare.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "BasePath": "_content/ChildCare.Api",
+      "RelativePath": "uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b8siqmq2b2",
+      "Integrity": "lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p+I8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
+      "SourceId": "ChildCare.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "BasePath": "_content/ChildCare.Api",
+      "RelativePath": "uploads/8f31d7c4-6178-4b4f-995d-1d2e999ec14b#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zqzccpxd8e",
+      "Integrity": "+x+Rm7hrZyQubKagJWQ6EdcYijwlpkMpDmzQRZ+JHpI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png"
+    },
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
+      "SourceId": "ChildCare.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "BasePath": "_content/ChildCare.Api",
+      "RelativePath": "uploads/f93fa876-0be6-4ed1-9648-c09d78cc2bb7#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "euyr00xn3j",
+      "Integrity": "2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/services/dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.0j1yszq8l9.jpg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xBsT2/yErFOb3qBaphvPx7fEQe8o3aLr6I/1ip38rQg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 05:57:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0j1yszq8l9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/services/dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xBsT2/yErFOb3qBaphvPx7fEQe8o3aLr6I/1ip38rQg="
+        }
+      ]
+    },
+    {
+      "Route": "images/services/dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "146424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xBsT2/yErFOb3qBaphvPx7fEQe8o3aLr6I/1ip38rQg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 05:57:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xBsT2/yErFOb3qBaphvPx7fEQe8o3aLr6I/1ip38rQg="
+        }
+      ]
+    },
+    {
+      "Route": "images/services/Khám da liễu.jpg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Khám da liễu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155719"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V8JjK8E6erecz1JTGC4K/AQsprMp5cohvpmGGN1Uwc4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 05:57:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-V8JjK8E6erecz1JTGC4K/AQsprMp5cohvpmGGN1Uwc4="
+        }
+      ]
+    },
+    {
+      "Route": "images/services/Khám da liễu.llmxhfgc5w.jpg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Khám da liễu.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "155719"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"V8JjK8E6erecz1JTGC4K/AQsprMp5cohvpmGGN1Uwc4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 05:57:55 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "llmxhfgc5w"
+        },
+        {
+          "Name": "label",
+          "Value": "images/services/Khám da liễu.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-V8JjK8E6erecz1JTGC4K/AQsprMp5cohvpmGGN1Uwc4="
+        }
+      ]
+    },
+    {
+      "Route": "images/services/kham-suc-khoe-cho-be_0004171_710.i8670rurgw.jpeg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152773"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ugd5AU/SKpsC8iGhH/3tglV2yM+AJgCQTo5F2z7W65Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 05:57:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i8670rurgw"
+        },
+        {
+          "Name": "label",
+          "Value": "images/services/kham-suc-khoe-cho-be_0004171_710.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ugd5AU/SKpsC8iGhH/3tglV2yM+AJgCQTo5F2z7W65Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/services/kham-suc-khoe-cho-be_0004171_710.jpeg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "152773"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Ugd5AU/SKpsC8iGhH/3tglV2yM+AJgCQTo5F2z7W65Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 05:57:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Ugd5AU/SKpsC8iGhH/3tglV2yM+AJgCQTo5F2z7W65Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/services/Screenshot 2025-10-29 154632.euyr00xn3j.png",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Oct 2025 10:30:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "euyr00xn3j"
+        },
+        {
+          "Name": "label",
+          "Value": "images/services/Screenshot 2025-10-29 154632.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4="
+        }
+      ]
+    },
+    {
+      "Route": "images/services/Screenshot 2025-10-29 154632.png",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Oct 2025 10:30:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4="
+        }
+      ]
+    },
+    {
+      "Route": "images/services/tiem_vac_xin_cho_tre_2207213354.jpeg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GK816tYGKD4E8nc6eWxBEZRdnuME4HI3SVFICBraf/I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 05:57:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GK816tYGKD4E8nc6eWxBEZRdnuME4HI3SVFICBraf/I="
+        }
+      ]
+    },
+    {
+      "Route": "images/services/tiem_vac_xin_cho_tre_2207213354.wyv1j9agjk.jpeg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226994"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GK816tYGKD4E8nc6eWxBEZRdnuME4HI3SVFICBraf/I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 05:57:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wyv1j9agjk"
+        },
+        {
+          "Name": "label",
+          "Value": "images/services/tiem_vac_xin_cho_tre_2207213354.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GK816tYGKD4E8nc6eWxBEZRdnuME4HI3SVFICBraf/I="
+        }
+      ]
+    },
+    {
+      "Route": "images/services/tu-van-dinh-duong-cho-be-ava.ekwh8p36sk.jpg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "826145"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4oQ9CLr6tOC1zR8SU75UN5djuTs/y7rxJ983ClDOduQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 05:57:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ekwh8p36sk"
+        },
+        {
+          "Name": "label",
+          "Value": "images/services/tu-van-dinh-duong-cho-be-ava.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4oQ9CLr6tOC1zR8SU75UN5djuTs/y7rxJ983ClDOduQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/services/tu-van-dinh-duong-cho-be-ava.jpg",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "826145"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4oQ9CLr6tOC1zR8SU75UN5djuTs/y7rxJ983ClDOduQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 31 Oct 2025 05:57:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4oQ9CLr6tOC1zR8SU75UN5djuTs/y7rxJ983ClDOduQ="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.b8siqmq2b2.pdf",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "66107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p+I8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Nov 2025 08:26:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b8siqmq2b2"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p+I8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "66107"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p+I8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Nov 2025 08:26:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p+I8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28657"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+x+Rm7hrZyQubKagJWQ6EdcYijwlpkMpDmzQRZ+JHpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Nov 2025 08:33:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+x+Rm7hrZyQubKagJWQ6EdcYijwlpkMpDmzQRZ+JHpI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/8f31d7c4-6178-4b4f-995d-1d2e999ec14b.zqzccpxd8e.png",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28657"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+x+Rm7hrZyQubKagJWQ6EdcYijwlpkMpDmzQRZ+JHpI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Nov 2025 08:33:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zqzccpxd8e"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+x+Rm7hrZyQubKagJWQ6EdcYijwlpkMpDmzQRZ+JHpI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f93fa876-0be6-4ed1-9648-c09d78cc2bb7.euyr00xn3j.png",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Nov 2025 08:37:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "euyr00xn3j"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
+      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Nov 2025 08:37:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2kbk2UREnunaE77s9jb6kVL7vGreb1wd5m6e1kPS/X4="
+        }
+      ]
+    }
+  ]
+}

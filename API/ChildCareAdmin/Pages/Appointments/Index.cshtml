@@ -1,0 +1,50 @@
+﻿@page
+@model ChildCareAdmin.Pages.Appointments.IndexModel
+
+<h2>Appointments Management</h2>
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>User</th>
+            <th>Service</th>
+            <th>Staff Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var a in Model.Appointments)
+        {
+            <tr>
+                <td>@a.UserName</td>
+                <td>@a.ServiceName</td>
+                <td>@a.StaffName</td>
+                <td>@a.AppointmentDate.ToShortDateString()</td>
+                <td>@a.AppointmentTime</td>
+                <td>@a.Status</td>
+                <td>
+                    <form method="post" asp-page-handler="UpdateStatus" asp-route-id="@a.AppointmentID">
+                        <select name="status" class="form-select form-select-sm">
+                            @foreach (var s in Model.StatusList)
+                            {
+                                if (s == a.Status)
+                                {
+                                    <option value="@s" selected>@s</option>
+                                }
+                                else
+                                {
+                                    <option value="@s">@s</option>
+                                }
+                            }
+
+                        </select>
+                        <button type="submit" class="btn btn-primary btn-sm mt-1">Update</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

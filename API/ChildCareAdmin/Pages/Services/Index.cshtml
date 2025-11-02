@@ -1,0 +1,92 @@
+﻿@page
+@model ChildCareAdmin.Pages.Services.IndexModel
+@{
+    ViewData["Title"] = "Manage Services";
+}
+
+<h2>Manage Services</h2>
+<a class="btn btn-success mb-3" asp-page="Create">+ Add New Service</a>
+
+<form method="get" class="mb-3">
+    <div class="row g-2">
+        <div class="col">
+            <input type="text" name="name" class="form-control" placeholder="Search by name" value="@Model.Name" />
+        </div>
+        <div class="col">
+            <input type="number" name="minPrice" class="form-control" placeholder="Min Price" value="@Model.MinPrice" />
+        </div>
+        <div class="col">
+            <input type="number" name="maxPrice" class="form-control" placeholder="Max Price" value="@Model.MaxPrice" />
+        </div>
+        <div class="col">
+            <input type="number" name="minDuration" class="form-control" placeholder="Min Duration" value="@Model.MinDuration" />
+        </div>
+        <div class="col">
+            <input type="number" name="maxDuration" class="form-control" placeholder="Max Duration" value="@Model.MaxDuration" />
+        </div>
+        <div class="col">
+            <select asp-for="SortBy" class="form-control">
+                <option value="">Sort By</option>
+                <option value="price">Price</option>
+                <option value="duration">Duration</option>
+            </select>
+        </div>
+        <div class="col">
+            <select asp-for="SortOrder" class="form-control">
+                <option value="">Order</option>
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Filter</button>
+        </div>
+    </div>
+</form>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Duration</th>
+            <th>Image</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var s in Model.Services)
+        {
+            <tr>
+                <td>@s.Name</td>
+                <td>@s.Price.ToString("C")</td>
+                <td>@s.DurationMinutes min</td>
+                <td>
+                    @if (!string.IsNullOrEmpty(s.ImageUrl))
+                    {
+                        <img src="@s.ImageUrl" alt="@s.Name" width="80" />
+                    }
+                </td>
+                <td>
+                    <a asp-page="Edit" asp-route-id="@s.ServiceID" class="btn btn-warning btn-sm">Edit</a>
+                    <form method="post" asp-page-handler="Delete" asp-route-id="@s.ServiceID" style="display:inline;">
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<nav>
+    <ul class="pagination">
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            <li class="page-item @(i == Model.Page ? "active" : "")">
+                <a class="page-link" href="@Url.Page(null, null, new { page = i, name = Model.Name, minPrice = Model.MinPrice, maxPrice = Model.MaxPrice, minDuration = Model.MinDuration, maxDuration = Model.MaxDuration, sortBy = Model.SortBy, sortOrder = Model.SortOrder })">
+                    @i
+                </a>
+            </li>
+        }
+    </ul>
+</nav>
