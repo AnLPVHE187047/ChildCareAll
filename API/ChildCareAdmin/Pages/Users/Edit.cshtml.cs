@@ -21,12 +21,11 @@ namespace ChildCareAdmin.Pages.Users
 
         public string? CurrentImageUrl { get; set; }
 
-        public int UserID { get; set; }
-
         public async Task<IActionResult> OnGetAsync(int id)
         {
             var token = HttpContext.Session.GetString("AuthToken");
-            if (string.IsNullOrEmpty(token)) return RedirectToPage("/Auth/Login");
+            if (string.IsNullOrEmpty(token))
+                return RedirectToPage("/Auth/Login");
 
             var client = _clientFactory.CreateClient("ChildCareApi");
             client.DefaultRequestHeaders.Authorization =
@@ -35,26 +34,27 @@ namespace ChildCareAdmin.Pages.Users
             var user = await client.GetFromJsonAsync<UserDTO>($"users/{id}");
             if (user == null) return NotFound();
 
-            UserID = user.UserID;
-            CurrentImageUrl = user.ImageUrl;
-
             Input = new UserUpdateDTO
             {
                 FullName = user.FullName,
                 Email = user.Email,
                 Phone = user.Phone,
-                Role = user.Role
+                Role = user.Role,
+                IsActive = user.IsActive
             };
 
+            CurrentImageUrl = user.ImageUrl;
             return Page();
         }
 
         public async Task<IActionResult> OnPostAsync(int id)
         {
-            if (!ModelState.IsValid) return Page();
+            if (!ModelState.IsValid)
+                return Page();
 
             var token = HttpContext.Session.GetString("AuthToken");
-            if (string.IsNullOrEmpty(token)) return RedirectToPage("/Auth/Login");
+            if (string.IsNullOrEmpty(token))
+                return RedirectToPage("/Auth/Login");
 
             var client = _clientFactory.CreateClient("ChildCareApi");
             client.DefaultRequestHeaders.Authorization =
@@ -65,6 +65,7 @@ namespace ChildCareAdmin.Pages.Users
             content.Add(new StringContent(Input.Email), "Email");
             content.Add(new StringContent(Input.Phone), "Phone");
             content.Add(new StringContent(Input.Role), "Role");
+            content.Add(new StringContent(Input.IsActive.ToString()), "IsActive");
 
             if (ImageFile != null)
             {
@@ -85,9 +86,10 @@ namespace ChildCareAdmin.Pages.Users
 
     public class UserUpdateDTO
     {
-        public string FullName { get; set; } = null!;
-        public string Email { get; set; } = null!;
-        public string Phone { get; set; } = null!;
+        public string FullName { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Phone { get; set; } = string.Empty;
         public string Role { get; set; } = "Parent";
+        public bool IsActive { get; set; } = true;
     }
 }

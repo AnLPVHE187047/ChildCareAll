@@ -95,6 +95,7 @@ namespace ChildCare.Api.Repositories
         #region CREATE / UPDATE
         public async Task<User> AddUserAsync(User user)
         {
+            user.IsActive ??= true;
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
             return user;
@@ -102,6 +103,7 @@ namespace ChildCare.Api.Repositories
 
         public async Task<User> AddUserWithImageAsync(User user, IFormFile? imageFile, IWebHostEnvironment env, HttpRequest request)
         {
+            user.IsActive ??= true;
             if (imageFile != null && imageFile.Length > 0)
             {
                 string uploadsFolder = Path.Combine(env.WebRootPath, "uploads");

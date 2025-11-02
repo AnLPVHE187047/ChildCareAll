@@ -22,18 +22,26 @@
     <div class="mb-3">
         <label class="form-label">Role</label>
         <select asp-for="Input.Role" class="form-select">
-            <option value="Parent" selected="@("Parent" == Model.Input.Role)">Parent</option>
-            <option value="Staff" selected="@("Staff" == Model.Input.Role)">Staff</option>
-            <option value="Admin" selected="@("Admin" == Model.Input.Role)">Admin</option>
+            <option value="Parent">Parent</option>
+            <option value="Staff">Staff</option>
+            <option value="Admin">Admin</option>
         </select>
     </div>
 
     <div class="mb-3">
-        <label class="form-label">Image</label>
+        <label class="form-label">Status</label>
+        <select asp-for="Input.IsActive" class="form-select">
+            <option value="true" selected="@(Model.Input.IsActive ? "selected" : null)">Active</option>
+            <option value="false" selected="@(!Model.Input.IsActive ? "selected" : null)">Inactive</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Profile Image</label>
         <input type="file" asp-for="ImageFile" class="form-control" />
         @if (!string.IsNullOrEmpty(Model.CurrentImageUrl))
         {
-            <img src="@Model.CurrentImageUrl" width="80" height="80" class="mt-2" style="border-radius:50%" />
+            <img src="@Model.CurrentImageUrl" width="100" height="100" class="mt-2 rounded-circle border" />
         }
     </div>
 

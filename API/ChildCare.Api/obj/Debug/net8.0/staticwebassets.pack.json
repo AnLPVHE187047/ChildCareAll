@@ -25,16 +25,16 @@
       "PackagePath": "staticwebassets\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg"
     },
     {
+      "Id": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\11c81ff0-f4d6-45f6-8734-d01538fbe48f.png",
+      "PackagePath": "staticwebassets\\uploads\\11c81ff0-f4d6-45f6-8734-d01538fbe48f.png"
+    },
+    {
       "Id": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
       "PackagePath": "staticwebassets\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf"
     },
     {
       "Id": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
       "PackagePath": "staticwebassets\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png"
-    },
-    {
-      "Id": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
-      "PackagePath": "staticwebassets\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ChildCare.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
