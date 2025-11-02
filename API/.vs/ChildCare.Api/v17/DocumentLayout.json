@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "E:\\GitRepos\\ChildCareAll\\API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -266,7 +266,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 219,
+          "SelectedChildIndex": 212,
           "Children": [
             {
               "$type": "Bookmark",
@@ -1118,13 +1118,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\UserRepository.cs",
               "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\UserRepository.cs",
               "RelativeToolTip": "ChildCare.Api\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAALMAAAAAAAAAAADwv+4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALUAAAAAAAAAAADwv/AAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T07:51:00.247Z",
               "EditorCaption": ""
@@ -1208,7 +1208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\UserController.cs",

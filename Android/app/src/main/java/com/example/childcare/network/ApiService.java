@@ -64,6 +64,7 @@ public interface ApiService {
             @Part("FullName") RequestBody fullName,
             @Part("Email") RequestBody email,
             @Part("Phone") RequestBody phone,
+            @Part("IsActive") RequestBody isActive,
             @Part MultipartBody.Part imageFile
     );
 

@@ -32,6 +32,7 @@ public class ProfileActivity extends AppCompatActivity {
     private Button btnSave;
     private Uri selectedImageUri = null;
     private int userId;
+    private boolean isActive;
 
     private static final int PICK_IMAGE_REQUEST = 100;
 
@@ -44,6 +45,7 @@ public class ProfileActivity extends AppCompatActivity {
         etFullName = findViewById(R.id.etFullName);
         etEmail = findViewById(R.id.etEmail);
         etPhone = findViewById(R.id.etPhone);
+
         tvRole = findViewById(R.id.tvRole);
         btnSave = findViewById(R.id.btnSave);
 
@@ -75,6 +77,7 @@ public class ProfileActivity extends AppCompatActivity {
                     etEmail.setText(user.getEmail());
                     etPhone.setText(user.getPhone());
                     tvRole.setText("Role: " + user.getRole());
+                    isActive = user.getIsActive();
 
                     if (user.getImageUrl() != null && !user.getImageUrl().isEmpty()) {
                         String imageUrl = user.getImageUrl().replace("localhost", "10.0.2.2");
@@ -126,6 +129,7 @@ public class ProfileActivity extends AppCompatActivity {
         RequestBody fullNameBody = RequestBody.create(MediaType.parse("text/plain"), fullName);
         RequestBody emailBody = RequestBody.create(MediaType.parse("text/plain"), email);
         RequestBody phoneBody = RequestBody.create(MediaType.parse("text/plain"), phone);
+        RequestBody isActiveBody = RequestBody.create(MediaType.parse("text/plain"), String.valueOf(isActive));
 
         MultipartBody.Part imagePart = null;
         if (selectedImageUri != null) {
@@ -137,12 +141,14 @@ public class ProfileActivity extends AppCompatActivity {
             }
         }
 
-        api.updateUserProfile(userId, fullNameBody, emailBody, phoneBody, imagePart)
+        api.updateUserProfile(userId, fullNameBody, emailBody, phoneBody, isActiveBody, imagePart)
                 .enqueue(new Callback<Void>() {
                     @Override
                     public void onResponse(Call<Void> call, Response<Void> response) {
                         if (response.isSuccessful()) {
                             Toast.makeText(ProfileActivity.this, "Profile updated successfully", Toast.LENGTH_SHORT).show();
+                            SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+                            prefs.edit().putString("fullName", fullName).apply();
                             loadUserProfile();
                         } else {
                             Toast.makeText(ProfileActivity.this, "Update failed", Toast.LENGTH_SHORT).show();

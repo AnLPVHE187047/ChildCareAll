@@ -72,12 +72,31 @@ public class HomeActivity extends AppCompatActivity {
         setupDrawerMenu();
         loadServices();
 
-        String fullName = getIntent().getStringExtra("fullName");
+        // 🔹 Lấy tên người dùng từ SharedPreferences (ưu tiên hơn Intent)
+        SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        String fullName = prefs.getString("fullName", null);
+
+        if (fullName == null) {
+            // Nếu chưa có trong SharedPreferences thì lấy từ Intent (khi mới login)
+            fullName = getIntent().getStringExtra("fullName");
+        }
+
         if (fullName != null) {
             tvGreeting.setText("Xin chào, " + fullName + "!");
         }
 
         btnMenu.setOnClickListener(v -> drawerLayout.openDrawer(GravityCompat.START));
+    }
+
+    // 🔹 Cập nhật lại tên khi quay lại từ ProfileActivity
+    @Override
+    protected void onResume() {
+        super.onResume();
+        SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        String fullName = prefs.getString("fullName", null);
+        if (fullName != null) {
+            tvGreeting.setText("Xin chào, " + fullName + "!");
+        }
     }
 
     // 🔸 Drawer menu navigation
@@ -88,7 +107,6 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(new Intent(this, ProfileActivity.class));
             drawerLayout.closeDrawer(GravityCompat.START);
         });
-
 
         navSchedule.setOnClickListener(v -> {
             startActivity(new Intent(this, AppointmentHistoryActivity.class));

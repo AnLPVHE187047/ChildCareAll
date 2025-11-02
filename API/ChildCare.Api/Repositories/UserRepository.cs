@@ -129,8 +129,9 @@ namespace ChildCare.Api.Repositories
 
         // CHỈ UPDATE THÔNG TIN, KHÔNG UPDATE ẢNH
         public async Task<bool> UpdateAsync(int id, UserUpdateDTO dto)
-        {
+        {   
             var user = await _context.Users.FindAsync(id);
+            user.IsActive ??= true;
             if (user == null) return false;
 
             user.FullName = dto.FullName;
@@ -147,6 +148,7 @@ namespace ChildCare.Api.Repositories
         public async Task<bool> UpdateUserWithImageAsync(int id, UserUpdateDTO dto, IFormFile? imageFile, IWebHostEnvironment env, HttpRequest request)
         {
             var user = await _context.Users.FindAsync(id);
+            user.IsActive ??= true;
             if (user == null) return false;
 
             user.FullName = dto.FullName;
