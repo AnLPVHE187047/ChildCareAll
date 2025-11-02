@@ -84,18 +84,6 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"shymm6pagx"},{"Name":"integrity","Value":"sha256-IBZPXVUuhu9vH2EgcR8SxKQgYdGZDV7ZTWkvN0KXAOI="},{"Name":"label","Value":"_content/ChildCare.Api/uploads/11c81ff0-f4d6-45f6-8734-d01538fbe48f.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"60018"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022IBZPXVUuhu9vH2EgcR8SxKQgYdGZDV7ZTWkvN0KXAOI=\u0022"},{"Name":"Last-Modified","Value":"Sun, 02 Nov 2025 09:13:02 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/ChildCare.Api/uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.b8siqmq2b2.pdf">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"b8siqmq2b2"},{"Name":"integrity","Value":"sha256-lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p\u002BI8="},{"Name":"label","Value":"_content/ChildCare.Api/uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"66107"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p\u002BI8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 02 Nov 2025 08:26:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/ChildCare.Api/uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p\u002BI8="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"66107"},{"Name":"Content-Type","Value":"application/pdf"},{"Name":"ETag","Value":"\u0022lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p\u002BI8=\u0022"},{"Name":"Last-Modified","Value":"Sun, 02 Nov 2025 08:26:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ChildCare.Api/uploads/517d594a-131f-4762-9348-104385bd32af.dm4bz4ox2o.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\517d594a-131f-4762-9348-104385bd32af.png'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

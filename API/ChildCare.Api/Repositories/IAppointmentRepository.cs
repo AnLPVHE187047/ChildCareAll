@@ -11,5 +11,10 @@ namespace ChildCare.Api.Repositories
         Task<bool> UpdateStatusAsync(int id, AppointmentUpdateStatusDTO dto);
         Task<bool> DeleteAsync(int id);
         Task<IEnumerable<string>> GetStatusesAsync();
+        Task<IEnumerable<AppointmentResponseDTO>> FilterAppointmentsAsync(
+      string? userName,
+      int? month,
+      int? week,
+      string? status);
     }
 }

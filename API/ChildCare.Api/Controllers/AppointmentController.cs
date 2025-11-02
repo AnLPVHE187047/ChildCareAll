@@ -97,5 +97,16 @@ namespace ChildCare.Api.Controllers
             var statuses = await _repo.GetStatusesAsync();
             return Ok(statuses);
         }
+        [HttpGet("filter")]
+        public async Task<IActionResult> Filter(
+    [FromQuery] string? userName,
+    [FromQuery] int? month,
+    [FromQuery] int? week,
+    [FromQuery] string? status)
+        {
+            var result = await _repo.FilterAppointmentsAsync(userName, month, week, status);
+            return Ok(result);
+        }
+
     }
 }

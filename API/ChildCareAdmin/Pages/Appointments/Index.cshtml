@@ -2,6 +2,65 @@
 @model ChildCareAdmin.Pages.Appointments.IndexModel
 
 <h2>Appointments Management</h2>
+<form method="get" class="row g-2 mb-3">
+    <div class="col">
+        <input type="text" name="SearchUser" class="form-control" placeholder="Search User..." value="@Model.SearchUser">
+    </div>
+    <div class="col">
+        <select name="month" class="form-select">
+            <option value="">All Months</option>
+            @for (int m = 1; m <= 12; m++)
+            {
+                @if (Request.Query["month"] == m.ToString())
+                {
+                    <option value="@m" selected>@m</option>
+                }
+                else
+                {
+                    <option value="@m">@m</option>
+                }
+
+            }
+        </select>
+    </div>
+    <div class="col">
+        <select name="week" class="form-select">
+            <option value="">All Weeks</option>
+            @for (int w = 1; w <= 5; w++)
+            {
+                @if (Request.Query["week"] == w.ToString())
+                {
+                    <option value="@w" selected>@w</option>
+                }
+                else
+                {
+                    <option value="@w">@w</option>
+                }
+
+            }
+        </select>
+    </div>
+    <div class="col">
+        <select name="status" class="form-select">
+            <option value="">All Status</option>
+            @foreach (var s in Model.StatusList)
+            {
+                @if (Request.Query["status"] == s.ToString())
+                {
+                    <option value="@s" selected>@s</option>
+                }
+                else
+                {
+                    <option value="@s">@s</option>
+                }
+
+            }
+        </select>
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Filter</button>
+    </div>
+</form>
 
 <table class="table table-hover">
     <thead>

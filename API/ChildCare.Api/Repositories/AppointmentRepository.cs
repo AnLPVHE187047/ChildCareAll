@@ -192,5 +192,57 @@ namespace ChildCare.Api.Repositories
                 .OrderBy(s => s)
                 .ToListAsync();
         }
+        public async Task<IEnumerable<AppointmentResponseDTO>> FilterAppointmentsAsync(
+    string? userName,
+    int? month,
+    int? week,
+    string? status)
+        {
+            var query = _context.Appointments
+                .Include(a => a.User)
+                .Include(a => a.Service)
+                .Include(a => a.Staff)
+                .AsQueryable();
+
+            if (!string.IsNullOrEmpty(userName))
+            {
+                query = query.Where(a => a.User.FullName.Contains(userName));
+            }
+
+            if (month.HasValue)
+            {
+                query = query.Where(a => a.AppointmentDate.Month == month.Value);
+            }
+
+            if (week.HasValue)
+            {
+                // Tuần trong tháng: 1,2,3,4,5
+                query = query.Where(a => ((a.AppointmentDate.Day - 1) / 7 + 1) == week.Value);
+            }
+
+            if (!string.IsNullOrEmpty(status))
+            {
+                query = query.Where(a => a.Status == status);
+            }
+
+            return query
+      .AsEnumerable() 
+      .Select(a => new AppointmentResponseDTO
+      {
+          AppointmentID = a.AppointmentId,
+          UserName = a.User.FullName,
+          ServiceName = a.Service.Name,
+          StaffName = a.Staff?.FullName,
+          AppointmentDate = a.AppointmentDate.ToDateTime(TimeOnly.MinValue),
+          AppointmentTime = a.AppointmentTime.ToTimeSpan(),
+          Address = a.Address,
+          Status = a.Status,
+          CreatedAt = a.CreatedAt
+      })
+      .OrderByDescending(a => a.AppointmentDate)
+      .ThenByDescending(a => a.AppointmentTime)
+      .ToList();
+        }
+
     }
 }

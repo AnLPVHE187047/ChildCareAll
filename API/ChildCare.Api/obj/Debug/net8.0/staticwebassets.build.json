@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ms/eksVzS7BSrq130SBWJl2cxN0+hgM+B4avJTu7wAo=",
+  "Hash": "T+5m1Q9QQrHCmaq4ULYsskI73GdfXinGoTrkeDh1RA0=",
   "Source": "ChildCare.Api",
   "BasePath": "_content/ChildCare.Api",
   "Mode": "Default",
@@ -162,27 +162,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\11c81ff0-f4d6-45f6-8734-d01538fbe48f.png"
-    },
-    {
-      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
-      "SourceId": "ChildCare.Api",
-      "SourceType": "Discovered",
-      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
-      "BasePath": "_content/ChildCare.Api",
-      "RelativePath": "uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636#[.{fingerprint}]?.pdf",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "b8siqmq2b2",
-      "Integrity": "lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p+I8=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf"
     },
     {
       "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\517d594a-131f-4762-9348-104385bd32af.png",
@@ -799,88 +778,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-IBZPXVUuhu9vH2EgcR8SxKQgYdGZDV7ZTWkvN0KXAOI="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.b8siqmq2b2.pdf",
-      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "66107"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p+I8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 02 Nov 2025 08:26:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "b8siqmq2b2"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p+I8="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
-      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "66107"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/pdf"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p+I8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 02 Nov 2025 08:26:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-lQ5XnZGnF6zVVkutD51r1uc5vUNERPYMcK7h6k6p+I8="
         }
       ]
     },
