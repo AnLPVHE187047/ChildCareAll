@@ -47,13 +47,18 @@ public interface ApiService {
             @Query("date") String date
     );
 
-    // Lấy danh sách appointments của user hiện tại
+    // Chỉnh sửa để hỗ trợ filter
     @GET("appointments/my-appointments")
-    Call<List<Appointment>> getMyAppointments();
+    Call<List<Appointment>> getMyAppointments(
+            @Query("userName") String userName,
+            @Query("month") Integer month,
+            @Query("week") Integer week,
+            @Query("status") String status
+    );
 
-    // Lấy chi tiết appointment theo ID
     @GET("appointments/{id}")
     Call<Appointment> getAppointmentById(@Path("id") int id);
+
     @GET("users/{id}")
     Call<UserResponse> getUserById(@Path("id") int id);
 
@@ -67,5 +72,4 @@ public interface ApiService {
             @Part("IsActive") RequestBody isActive,
             @Part MultipartBody.Part imageFile
     );
-
 }

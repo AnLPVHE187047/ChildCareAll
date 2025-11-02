@@ -15,6 +15,9 @@ namespace ChildCare.Api.Repositories
       string? userName,
       int? month,
       int? week,
-      string? status);
+      string? status,
+      int? userId = null);
+
+
     }
 }

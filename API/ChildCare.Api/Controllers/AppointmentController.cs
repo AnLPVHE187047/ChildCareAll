@@ -39,16 +39,24 @@ namespace ChildCare.Api.Controllers
 
         // API mới: Lấy appointments của user hiện tại (từ token)
         [HttpGet("my-appointments")]
-        public async Task<IActionResult> GetMyAppointments()
+        public async Task<IActionResult> GetMyAppointments(
+      [FromQuery] string? userName,
+      [FromQuery] int? month,
+      [FromQuery] int? week,
+      [FromQuery] string? status)
         {
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
             if (userIdClaim == null)
                 return Unauthorized("Token missing user ID");
 
             int userId = int.Parse(userIdClaim.Value);
-            var appointments = await _repo.GetByUserIdAsync(userId);
+
+            // Chỉ lấy appointments của user hiện tại
+            var appointments = await _repo.FilterAppointmentsAsync(userName, month, week, status, userId);
+
             return Ok(appointments);
         }
+
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)

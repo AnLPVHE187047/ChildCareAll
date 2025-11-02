@@ -42,7 +42,7 @@ namespace ChildCare.Api.Repositories
     .Include(a => a.Service)
     .Include(a => a.Staff)
     .Where(a => a.UserId == userId)
-    .ToListAsync(); // <== EF chỉ lấy dữ liệu, chưa chuyển đổi
+    .ToListAsync(); 
 
             return appointments
                 .Select(a => new AppointmentResponseDTO
@@ -193,16 +193,22 @@ namespace ChildCare.Api.Repositories
                 .ToListAsync();
         }
         public async Task<IEnumerable<AppointmentResponseDTO>> FilterAppointmentsAsync(
-    string? userName,
-    int? month,
-    int? week,
-    string? status)
+      string? userName,
+      int? month,
+      int? week,
+      string? status,
+      int? userId = null)
         {
             var query = _context.Appointments
                 .Include(a => a.User)
                 .Include(a => a.Service)
                 .Include(a => a.Staff)
                 .AsQueryable();
+
+            if (userId.HasValue)
+            {
+                query = query.Where(a => a.UserId == userId.Value);
+            }
 
             if (!string.IsNullOrEmpty(userName))
             {
@@ -216,7 +222,6 @@ namespace ChildCare.Api.Repositories
 
             if (week.HasValue)
             {
-                // Tuần trong tháng: 1,2,3,4,5
                 query = query.Where(a => ((a.AppointmentDate.Day - 1) / 7 + 1) == week.Value);
             }
 
@@ -226,23 +231,24 @@ namespace ChildCare.Api.Repositories
             }
 
             return query
-      .AsEnumerable() 
-      .Select(a => new AppointmentResponseDTO
-      {
-          AppointmentID = a.AppointmentId,
-          UserName = a.User.FullName,
-          ServiceName = a.Service.Name,
-          StaffName = a.Staff?.FullName,
-          AppointmentDate = a.AppointmentDate.ToDateTime(TimeOnly.MinValue),
-          AppointmentTime = a.AppointmentTime.ToTimeSpan(),
-          Address = a.Address,
-          Status = a.Status,
-          CreatedAt = a.CreatedAt
-      })
-      .OrderByDescending(a => a.AppointmentDate)
-      .ThenByDescending(a => a.AppointmentTime)
-      .ToList();
+              .AsEnumerable()
+              .Select(a => new AppointmentResponseDTO
+              {
+                  AppointmentID = a.AppointmentId,
+                  UserName = a.User.FullName,
+                  ServiceName = a.Service.Name,
+                  StaffName = a.Staff?.FullName,
+                  AppointmentDate = a.AppointmentDate.ToDateTime(TimeOnly.MinValue),
+                  AppointmentTime = a.AppointmentTime.ToTimeSpan(),
+                  Address = a.Address,
+                  Status = a.Status,
+                  CreatedAt = a.CreatedAt
+              })
+              .OrderByDescending(a => a.AppointmentDate)
+              .ThenByDescending(a => a.AppointmentTime)
+              .ToList();
         }
+
 
     }
 }

@@ -7,18 +7,6 @@
       "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|e:\\gitrepos\\childcareall\\api\\childcareadmin\\pages\\appointments\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\appointments\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|e:\\gitrepos\\childcareall\\api\\childcareadmin\\pages\\users\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\users\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|e:\\gitrepos\\childcareall\\api\\childcareadmin\\pages\\appointments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\appointments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,8 +15,32 @@
       "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|e:\\gitrepos\\childcareall\\api\\childcareadmin\\pages\\appointments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\appointments\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|e:\\gitrepos\\childcareall\\api\\childcareadmin\\pages\\appointments\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\appointments\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|e:\\gitrepos\\childcareall\\api\\childcareadmin\\pages\\users\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\pages\\users\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -69,14 +81,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -125,10 +129,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|e:\\gitrepos\\childcareall\\api\\childcareadmin\\models\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9FA2B7E5-8894-4BBC-8A43-72B5DF96E065}|ChildCareAdmin\\ChildCareAdmin.csproj|solutionrelative:childcareadmin\\models\\usercreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|solutionrelative:childcare.api\\dtos\\appointmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAE23C09-B213-4F12-A93F-F9EE16344700}|ChildCare.Api\\ChildCare.Api.csproj|e:\\gitrepos\\childcareall\\api\\childcare.api\\repositories\\staffrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -266,7 +266,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 214,
+          "SelectedChildIndex": 215,
           "Children": [
             {
               "$type": "Bookmark",
@@ -1118,54 +1118,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\AppointmentController.cs",
-              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Controllers\\AppointmentController.cs",
-              "RelativeToolTip": "ChildCare.Api\\Controllers\\AppointmentController.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAwwG0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T08:27:50.037Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IAppointmentRepository.cs",
-              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
-              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
-              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
-              "RelativeToolTip": "ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:56:55.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AppointmentRepository.cs",
-              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\AppointmentRepository.cs",
-              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\AppointmentRepository.cs",
-              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\AppointmentRepository.cs",
-              "RelativeToolTip": "ChildCare.Api\\Repositories\\AppointmentRepository.cs",
-              "ViewState": "AgIAAN8AAAAAAAAAAADwv+QAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:59:15.095Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Index.cshtml.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Appointments\\Index.cshtml.cs",
               "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Appointments\\Index.cshtml.cs",
               "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Appointments\\Index.cshtml.cs",
               "RelativeToolTip": "ChildCareAdmin\\Pages\\Appointments\\Index.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAA+wE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T09:35:42.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
+              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
+              "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAADwvzUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T10:26:30.112Z",
               "EditorCaption": ""
             },
             {
@@ -1176,40 +1150,105 @@
               "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Appointments\\Index.cshtml",
               "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Appointments\\Index.cshtml",
               "RelativeToolTip": "ChildCareAdmin\\Pages\\Appointments\\Index.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAADwvzEAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-24T09:35:36.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
-              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
-              "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAADwvzUAAAANAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\AppointmentRepository.cs",
+              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\AppointmentRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\AppointmentRepository.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAswPoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T10:26:30.112Z",
+              "WhenOpened": "2025-10-24T07:59:15.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\AppointmentController.cs",
+              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "ChildCare.Api\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAwwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T08:27:50.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IAppointmentRepository.cs",
+              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
+              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:56:55.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\UserRepository.cs",
+              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAYwPAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:51:00.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\IUserRepository.cs",
+              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "ChildCare.Api\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:50:27.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UserController.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\UserController.cs",
               "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Controllers\\UserController.cs",
               "RelativeToolTip": "ChildCare.Api\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAkwGEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T07:52:56.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
+              "Title": "AppointmentDTOs.cs",
+              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
+              "RelativeDocumentMoniker": "ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
+              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
+              "RelativeToolTip": "ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA+wB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-24T07:49:45.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ServiceController.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Controllers\\ServiceController.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\ServiceController.cs",
@@ -1222,7 +1261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Services\\Index.cshtml",
               "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Services\\Index.cshtml",
@@ -1235,7 +1274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Users\\Index.cshtml",
               "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Index.cshtml",
@@ -1248,7 +1287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\appsettings.json",
               "RelativeDocumentMoniker": "ChildCare.Api\\appsettings.json",
@@ -1261,7 +1300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Appointment.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Models\\Appointment.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Models\\Appointment.cs",
@@ -1274,7 +1313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "ServiceRepository.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\ServiceRepository.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\ServiceRepository.cs",
@@ -1287,7 +1326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "Service.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Models\\Service.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Models\\Service.cs",
@@ -1300,7 +1339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "Feedback.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Models\\Feedback.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Models\\Feedback.cs",
@@ -1313,7 +1352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "FeedbackRepository.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\FeedbackRepository.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\FeedbackRepository.cs",
@@ -1326,7 +1365,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "FeedbackController.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Controllers\\FeedbackController.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\FeedbackController.cs",
@@ -1339,33 +1378,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\UserRepository.cs",
-              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "ChildCare.Api\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAAwPAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:51:00.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\IUserRepository.cs",
-              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\IUserRepository.cs",
-              "RelativeToolTip": "ChildCare.Api\\Repositories\\IUserRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAmwBUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:50:27.641Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Models\\User.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Models\\User.cs",
@@ -1378,7 +1391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Edit.cshtml.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Users\\Edit.cshtml.cs",
               "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Edit.cshtml.cs",
@@ -1391,7 +1404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Users\\Edit.cshtml",
               "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Edit.cshtml",
@@ -1404,7 +1417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ChildCare.Api.csproj",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\ChildCare.Api.csproj",
               "RelativeDocumentMoniker": "ChildCare.Api\\ChildCare.Api.csproj",
@@ -1417,7 +1430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Models\\UserDTO.cs",
               "RelativeDocumentMoniker": "ChildCareAdmin\\Models\\UserDTO.cs",
@@ -1429,7 +1442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "UserDTOs.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\DTOs\\UserDTOs.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\DTOs\\UserDTOs.cs",
@@ -1441,7 +1454,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Program.cs",
               "RelativeDocumentMoniker": "ChildCareAdmin\\Program.cs",
@@ -1453,7 +1466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Program.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Program.cs",
@@ -1465,7 +1478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "AuthController.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "ChildCare.Api\\Controllers\\AuthController.cs",
@@ -1477,7 +1490,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "Create.cshtml.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Users\\Create.cshtml.cs",
               "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Create.cshtml.cs",
@@ -1489,7 +1502,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "Create.cshtml",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Pages\\Users\\Create.cshtml",
               "RelativeDocumentMoniker": "ChildCareAdmin\\Pages\\Users\\Create.cshtml",
@@ -1501,7 +1514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "UserCreateDTO.cs",
               "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCareAdmin\\Models\\UserCreateDTO.cs",
               "RelativeDocumentMoniker": "ChildCareAdmin\\Models\\UserCreateDTO.cs",
@@ -1522,18 +1535,6 @@
               "ViewState": "AgIAABgAAAAAAAAAAAAwwDEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-31T08:40:40.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "AppointmentDTOs.cs",
-              "DocumentMoniker": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
-              "RelativeDocumentMoniker": "ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
-              "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
-              "RelativeToolTip": "ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA+wB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:49:45.753Z"
             },
             {
               "$type": "Document",
