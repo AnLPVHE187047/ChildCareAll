@@ -51,9 +51,11 @@ public class LoginActivity extends AppCompatActivity {
                 if (response.isSuccessful() && response.body() != null) {
                     UserResponse user = response.body();
 
-                    // Lưu token
                     SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-                    prefs.edit().putString("token", user.getToken()).apply();
+                    SharedPreferences.Editor editor = prefs.edit();
+                    editor.putString("token", user.getToken());
+                    editor.putInt("userID", user.getUserID()); // 🔹 Lưu thêm userID
+                    editor.apply();
 
                     Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
 
@@ -63,6 +65,7 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(intent);
                     finish();
                 }
+
                 else {
                     Toast.makeText(LoginActivity.this, "Invalid credentials", Toast.LENGTH_SHORT).show();
                 }

@@ -62,19 +62,16 @@ public class HomeActivity extends AppCompatActivity {
         btnApplyFilter = findViewById(R.id.btnApplyFilter);
         btnClearFilter = findViewById(R.id.btnClearFilter);
 
-        // 🔹 Cấu hình RecyclerView
         rvServices.setLayoutManager(new GridLayoutManager(this, 2));
         adapter = new ServiceAdapter(this, filteredList);
         rvServices.setAdapter(adapter);
 
-        // 🔹 Khởi tạo giao diện
         setupPriceSpinner();
         setupFilterButtons();
         setupSearch();
         setupDrawerMenu();
         loadServices();
 
-        // 🔹 Chào người dùng
         String fullName = getIntent().getStringExtra("fullName");
         if (fullName != null) {
             tvGreeting.setText("Xin chào, " + fullName + "!");
@@ -88,9 +85,10 @@ public class HomeActivity extends AppCompatActivity {
         navHome.setOnClickListener(v -> drawerLayout.closeDrawer(GravityCompat.START));
 
         navProfile.setOnClickListener(v -> {
-            // startActivity(new Intent(this, ProfileActivity.class));
+            startActivity(new Intent(this, ProfileActivity.class));
             drawerLayout.closeDrawer(GravityCompat.START);
         });
+
 
         navSchedule.setOnClickListener(v -> {
             startActivity(new Intent(this, AppointmentHistoryActivity.class));

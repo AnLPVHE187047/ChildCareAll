@@ -10,10 +10,15 @@ import com.example.childcare.models.UserResponse;
 
 import java.util.List;
 
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.Multipart;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
+import retrofit2.http.Part;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
@@ -49,4 +54,17 @@ public interface ApiService {
     // Lấy chi tiết appointment theo ID
     @GET("appointments/{id}")
     Call<Appointment> getAppointmentById(@Path("id") int id);
+    @GET("users/{id}")
+    Call<UserResponse> getUserById(@Path("id") int id);
+
+    @Multipart
+    @PUT("users/{id}")
+    Call<Void> updateUserProfile(
+            @Path("id") int id,
+            @Part("FullName") RequestBody fullName,
+            @Part("Email") RequestBody email,
+            @Part("Phone") RequestBody phone,
+            @Part MultipartBody.Part imageFile
+    );
+
 }

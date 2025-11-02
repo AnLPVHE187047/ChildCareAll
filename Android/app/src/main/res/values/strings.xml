@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ChildCareApp</string>
+    <string name="profile_picture">Profile picture</string>
 </resources>

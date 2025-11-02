@@ -23,6 +23,7 @@
         <activity android:name=".ui.BookAppointmentActivity" />
         <activity android:name=".ui.AppointmentHistoryActivity" />
         <activity android:name=".ui.AppointmentDetailActivity" />
+        <activity android:name=".ui.ProfileActivity" />
         <activity
             android:name=".ui.LoginActivity"
             android:exported="true">
