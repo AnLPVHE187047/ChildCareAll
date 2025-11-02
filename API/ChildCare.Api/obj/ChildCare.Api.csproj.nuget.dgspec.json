@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\ChildCare.Api.csproj": {}
+    "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\ChildCare.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\ChildCare.Api.csproj": {
+    "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\ChildCare.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\ChildCare.Api.csproj",
+        "projectUniqueName": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\ChildCare.Api.csproj",
         "projectName": "ChildCare.Api",
-        "projectPath": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\ChildCare.Api.csproj",
+        "projectPath": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\ChildCare.Api.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\obj\\",
+        "outputPath": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

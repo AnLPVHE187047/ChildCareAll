@@ -1,0 +1,68 @@
+# Visual Studio
+.vs/
+.vscode/
+*.code-workspace
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.generated.cs
+*.g.cs
+*.g.i.cs
+
+# Backup & temp
+*_i.c
+*_p.c
+*_h.h
+*.tmp
+*.temp
+*.bak
+*.ncb
+*.opendb
+*.VC.db
+*.pidb
+*.svclog
+*.ide
+
+# Publish outputs
+publish/
+AppPackages/
+TestResults/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+*.nuspec
+packages/
+.nuget/
+project.lock.json
+
+# Entity Framework Migrations
+Migrations/obj/
+
+# Rider
+.idea/
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Others
+wwwroot/lib/
+node_modules/
+.env

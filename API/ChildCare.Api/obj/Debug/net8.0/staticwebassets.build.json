@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lEctuxSbNu1MTO76x6l6IHPSukhdyrkotaDJzGZIv+w=",
+  "Hash": "p3Lpyn+KzrdOBff2fU2tRJxvCc68h5AqFmBHOZhmgOw=",
   "Source": "ChildCare.Api",
   "BasePath": "_content/ChildCare.Api",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ChildCare.Api\\wwwroot",
       "Source": "ChildCare.Api",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
       "BasePath": "_content/ChildCare.Api",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
+      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
       "SourceId": "ChildCare.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
       "BasePath": "_content/ChildCare.Api",
       "RelativePath": "images/services/dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Khám da liễu.jpg",
+      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\Khám da liễu.jpg",
       "SourceId": "ChildCare.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
       "BasePath": "_content/ChildCare.Api",
       "RelativePath": "images/services/Khám da liễu#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\images\\services\\Khám da liễu.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg",
+      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg",
       "SourceId": "ChildCare.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
       "BasePath": "_content/ChildCare.Api",
       "RelativePath": "images/services/kham-suc-khoe-cho-be_0004171_710#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png",
+      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png",
       "SourceId": "ChildCare.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
       "BasePath": "_content/ChildCare.Api",
       "RelativePath": "images/services/Screenshot 2025-10-29 154632#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg",
+      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg",
       "SourceId": "ChildCare.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
       "BasePath": "_content/ChildCare.Api",
       "RelativePath": "images/services/tiem_vac_xin_cho_tre_2207213354#[.{fingerprint}]?.jpeg",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg",
+      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg",
       "SourceId": "ChildCare.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
       "BasePath": "_content/ChildCare.Api",
       "RelativePath": "images/services/tu-van-dinh-duong-cho-be-ava#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
+      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
       "SourceId": "ChildCare.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
       "BasePath": "_content/ChildCare.Api",
       "RelativePath": "uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636#[.{fingerprint}]?.pdf",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
+      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
       "SourceId": "ChildCare.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
       "BasePath": "_content/ChildCare.Api",
       "RelativePath": "uploads/8f31d7c4-6178-4b4f-995d-1d2e999ec14b#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png"
     },
     {
-      "Identity": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
+      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
       "SourceId": "ChildCare.Api",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\",
+      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
       "BasePath": "_content/ChildCare.Api",
       "RelativePath": "uploads/f93fa876-0be6-4ed1-9648-c09d78cc2bb7#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -209,7 +209,7 @@
   "Endpoints": [
     {
       "Route": "images/services/dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.0j1yszq8l9.jpg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -254,7 +254,7 @@
     },
     {
       "Route": "images/services/dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\dich-vu-cham-soc-me-va-be-sau-sinh-uy-tin-tai-nha-ln3xhirt.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -291,7 +291,7 @@
     },
     {
       "Route": "images/services/Khám da liễu.jpg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Khám da liễu.jpg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\Khám da liễu.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -328,7 +328,7 @@
     },
     {
       "Route": "images/services/Khám da liễu.llmxhfgc5w.jpg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Khám da liễu.jpg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\Khám da liễu.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -373,7 +373,7 @@
     },
     {
       "Route": "images/services/kham-suc-khoe-cho-be_0004171_710.i8670rurgw.jpeg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -418,7 +418,7 @@
     },
     {
       "Route": "images/services/kham-suc-khoe-cho-be_0004171_710.jpeg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\kham-suc-khoe-cho-be_0004171_710.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -455,7 +455,7 @@
     },
     {
       "Route": "images/services/Screenshot 2025-10-29 154632.euyr00xn3j.png",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -500,7 +500,7 @@
     },
     {
       "Route": "images/services/Screenshot 2025-10-29 154632.png",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\Screenshot 2025-10-29 154632.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -537,7 +537,7 @@
     },
     {
       "Route": "images/services/tiem_vac_xin_cho_tre_2207213354.jpeg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -574,7 +574,7 @@
     },
     {
       "Route": "images/services/tiem_vac_xin_cho_tre_2207213354.wyv1j9agjk.jpeg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\tiem_vac_xin_cho_tre_2207213354.jpeg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -619,7 +619,7 @@
     },
     {
       "Route": "images/services/tu-van-dinh-duong-cho-be-ava.ekwh8p36sk.jpg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -664,7 +664,7 @@
     },
     {
       "Route": "images/services/tu-van-dinh-duong-cho-be-ava.jpg",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\images\\services\\tu-van-dinh-duong-cho-be-ava.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -701,7 +701,7 @@
     },
     {
       "Route": "uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.b8siqmq2b2.pdf",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -746,7 +746,7 @@
     },
     {
       "Route": "uploads/3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\3ea4700c-66f8-4e02-8232-0fad4a61d636.pdf",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -783,7 +783,7 @@
     },
     {
       "Route": "uploads/8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -820,7 +820,7 @@
     },
     {
       "Route": "uploads/8f31d7c4-6178-4b4f-995d-1d2e999ec14b.zqzccpxd8e.png",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -865,7 +865,7 @@
     },
     {
       "Route": "uploads/f93fa876-0be6-4ed1-9648-c09d78cc2bb7.euyr00xn3j.png",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -910,7 +910,7 @@
     },
     {
       "Route": "uploads/f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
-      "AssetFile": "C:\\Users\\User\\source\\repos\\ChildCare.Api\\ChildCare.Api\\wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\f93fa876-0be6-4ed1-9648-c09d78cc2bb7.png",
       "Selectors": [],
       "ResponseHeaders": [
         {

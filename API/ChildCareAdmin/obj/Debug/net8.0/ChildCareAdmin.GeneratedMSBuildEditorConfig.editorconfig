@@ -9,81 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ChildCareAdmin
 build_property.RootNamespace = ChildCareAdmin
-build_property.ProjectDir = C:\Users\User\source\repos\ChildCare.Api\ChildCareAdmin\
+build_property.ProjectDir = E:\GitRepos\ChildCareAll\API\ChildCareAdmin\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\User\source\repos\ChildCare.Api\ChildCareAdmin
+build_property.MSBuildProjectDirectory = E:\GitRepos\ChildCareAll\API\ChildCareAdmin
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Appointments/Create.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Appointments/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Appointments/Index.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Appointments/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwb2ludG1lbnRzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Auth/Login.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Error.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Index.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Privacy.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Services/Create.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Services/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Services/Edit.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Services/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Services/Index.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Services/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Users/ChangePassword.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Users/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Users/Create.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Users/Edit.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Users/Index.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/_ViewImports.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/_ViewStart.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/User/source/repos/ChildCare.Api/ChildCareAdmin/Pages/Shared/_Layout.cshtml]
+[E:/GitRepos/ChildCareAll/API/ChildCareAdmin/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xvgacc4nh2

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChildCareAdmin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8a0037807c2782ca60d3de693071fae1dfb00f9")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChildCareAdmin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChildCareAdmin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

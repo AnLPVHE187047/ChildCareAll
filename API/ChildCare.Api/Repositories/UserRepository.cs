@@ -156,24 +156,43 @@ namespace ChildCare.Api.Repositories
             if (imageFile != null && imageFile.Length > 0)
             {
                 string uploadsFolder = Path.Combine(env.WebRootPath, "uploads");
-                if (!Directory.Exists(uploadsFolder)) Directory.CreateDirectory(uploadsFolder);
+                if (!Directory.Exists(uploadsFolder))
+                    Directory.CreateDirectory(uploadsFolder);
+
+                if (!string.IsNullOrEmpty(user.ImageUrl))
+                {
+                    try
+                    {
+                        string oldFileName = Path.GetFileName(user.ImageUrl);
+                        string oldFilePath = Path.Combine(uploadsFolder, oldFileName);
+                        if (File.Exists(oldFilePath))
+                        {
+                            File.Delete(oldFilePath);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"[WARN] Failed to delete old image: {ex.Message}");
+                    }
+                }
 
                 string uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
                 string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
-                using var fileStream = new FileStream(filePath, FileMode.Create);
-                await imageFile.CopyToAsync(fileStream);
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await imageFile.CopyToAsync(fileStream);
+                }
 
                 user.ImageUrl = $"/uploads/{uniqueFileName}";
+                user.ImageUrl = $"{request.Scheme}://{request.Host}{user.ImageUrl}";
             }
 
             await _context.SaveChangesAsync();
-
-            if (!string.IsNullOrEmpty(user.ImageUrl))
-                user.ImageUrl = $"{request.Scheme}://{request.Host}{user.ImageUrl}";
-
             return true;
         }
+
+
         #endregion
 
         #region DELETE / PASSWORD
