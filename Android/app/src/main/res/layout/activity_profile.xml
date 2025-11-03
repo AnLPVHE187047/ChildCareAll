@@ -30,7 +30,7 @@
         <!-- Tên đầy đủ -->
         <EditText
             android:id="@+id/etFullName"
-            android:hint="Full Name"
+            android:hint="Họ và tên"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
@@ -56,7 +56,7 @@
         <!-- Số điện thoại -->
         <EditText
             android:id="@+id/etPhone"
-            android:hint="Phone Number"
+            android:hint="Số điện thoại"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="phone"
@@ -71,7 +71,7 @@
             android:id="@+id/tvRole"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Role: Customer"
+            android:text="Quyền: Customer"
             android:textSize="16sp"
             android:textColor="#333333"
             android:layout_marginBottom="24dp" />
@@ -81,7 +81,7 @@
             android:id="@+id/btnSave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Save Changes"
+            android:text="Lưu"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
             android:backgroundTint="#4DB6AC"

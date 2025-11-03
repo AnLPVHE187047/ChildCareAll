@@ -84,6 +84,13 @@ public class ServiceDetailActivity extends AppCompatActivity {
                             .placeholder(R.drawable.placeholder)
                             .error(R.drawable.placeholder)
                             .into(imgServiceDetail);
+                    btnBookNow.setOnClickListener(v -> {
+                        Intent intent = new Intent(ServiceDetailActivity.this, BookAppointmentActivity.class);
+                        intent.putExtra("serviceId", s.getServiceID());
+                        intent.putExtra("serviceName",s.getName());
+                        intent.putExtra("serviceDuration",s.getDurationMinutes());
+                        startActivity(intent);
+                    });
                 } else {
                     Toast.makeText(ServiceDetailActivity.this, "Failed to load service detail", Toast.LENGTH_SHORT).show();
                 }

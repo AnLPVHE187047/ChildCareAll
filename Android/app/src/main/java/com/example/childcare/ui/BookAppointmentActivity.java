@@ -53,7 +53,7 @@ public class BookAppointmentActivity extends AppCompatActivity {
         serviceDuration = getIntent().getIntExtra("serviceDuration", 60);
 
         tvServiceName.setText(serviceName != null ? serviceName : "Service");
-        tvServiceDuration.setText("Duration: " + serviceDuration + " minutes");
+        tvServiceDuration.setText("Thời lượng: " + serviceDuration + " phút");
 
         loadStaffs();
         setupTimeSlotGrid();

@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@color/purple_500"
-            app:title="My Appointments"
+            app:title="Lịch sử đặt"
             app:titleTextColor="@android:color/white"
             app:navigationIcon="@drawable/ic_back" />
 

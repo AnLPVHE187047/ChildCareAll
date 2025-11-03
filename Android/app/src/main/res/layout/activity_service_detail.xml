@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:backgroundTint="@color/white"
-        app:title="Service Details"
+        app:title="Chi Tiết Dịch Vụ"
         app:titleTextColor="@color/black"
         app:navigationIcon="@android:drawable/ic_menu_revert"
         />

@@ -26,7 +26,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Register"
+                android:text="Đăng ký"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 android:layout_marginBottom="20dp"
@@ -36,7 +36,7 @@
                 android:id="@+id/etFullName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Full Name"
+                android:hint="Họ và tên"
                 android:inputType="textCapWords"
                 android:imeOptions="actionNext"/>
 
@@ -52,7 +52,7 @@
                 android:id="@+id/etPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Phone"
+                android:hint="Số điện thoại"
                 android:inputType="phone"
                 android:layout_marginTop="10dp"/>
 
@@ -60,7 +60,7 @@
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:hint="Mật khẩu"
                 android:inputType="textPassword"
                 android:layout_marginTop="10dp"/>
 
@@ -74,7 +74,7 @@
                 android:id="@+id/btnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Register"
+                android:text="Đăng ký"
                 android:layout_marginTop="20dp"/>
         </LinearLayout>
     </ScrollView>

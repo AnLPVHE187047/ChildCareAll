@@ -1126,8 +1126,7 @@
               "RelativeToolTip": "ChildCareAdmin\\Pages\\Appointments\\Index.cshtml.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAA+wE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T09:35:42.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T09:35:42.98Z"
             },
             {
               "$type": "Document",
@@ -1139,8 +1138,7 @@
               "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Index.cshtml.cs",
               "ViewState": "AgIAACAAAAAAAAAAAADwvzUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T10:26:30.112Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T10:26:30.112Z"
             },
             {
               "$type": "Document",
@@ -1152,8 +1150,7 @@
               "RelativeToolTip": "ChildCareAdmin\\Pages\\Appointments\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAB5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-24T09:35:36.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T09:35:36.658Z"
             },
             {
               "$type": "Document",
@@ -1163,7 +1160,7 @@
               "RelativeDocumentMoniker": "ChildCare.Api\\Repositories\\AppointmentRepository.cs",
               "ToolTip": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\Repositories\\AppointmentRepository.cs",
               "RelativeToolTip": "ChildCare.Api\\Repositories\\AppointmentRepository.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAswPoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALUAAAAAAAAAAAAswL8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-24T07:59:15.095Z",
               "EditorCaption": ""
@@ -1178,8 +1175,7 @@
               "RelativeToolTip": "ChildCare.Api\\Controllers\\AppointmentController.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAwwDoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T08:27:50.037Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T08:27:50.037Z"
             },
             {
               "$type": "Document",
@@ -1191,8 +1187,7 @@
               "RelativeToolTip": "ChildCare.Api\\Repositories\\IAppointmentRepository.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:56:55.186Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T07:56:55.186Z"
             },
             {
               "$type": "Document",
@@ -1204,8 +1199,7 @@
               "RelativeToolTip": "ChildCare.Api\\Repositories\\UserRepository.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAYwPAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:51:00.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T07:51:00.247Z"
             },
             {
               "$type": "Document",
@@ -1217,8 +1211,7 @@
               "RelativeToolTip": "ChildCare.Api\\Repositories\\IUserRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:50:27.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T07:50:27.641Z"
             },
             {
               "$type": "Document",
@@ -1230,8 +1223,7 @@
               "RelativeToolTip": "ChildCare.Api\\Controllers\\UserController.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:52:56.211Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T07:52:56.211Z"
             },
             {
               "$type": "Document",
@@ -1243,8 +1235,7 @@
               "RelativeToolTip": "ChildCare.Api\\DTOs\\AppointmentDTOs.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAA+wB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:49:45.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T07:49:45.753Z"
             },
             {
               "$type": "Document",
@@ -1256,8 +1247,7 @@
               "RelativeToolTip": "ChildCare.Api\\Controllers\\ServiceController.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAgwJYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:44:58.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T07:44:58.969Z"
             },
             {
               "$type": "Document",
@@ -1269,8 +1259,7 @@
               "RelativeToolTip": "ChildCareAdmin\\Pages\\Services\\Index.cshtml",
               "ViewState": "AgIAADQAAAAAAAAAAADwv1wAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-24T09:24:04.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T09:24:04.205Z"
             },
             {
               "$type": "Document",
@@ -1282,8 +1271,7 @@
               "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Index.cshtml",
               "ViewState": "AgIAAAIAAAAAAAAAAAAmwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-24T10:26:19.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T10:26:19.272Z"
             },
             {
               "$type": "Document",
@@ -1295,8 +1283,7 @@
               "RelativeToolTip": "ChildCare.Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-24T07:34:58.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T07:34:58.547Z"
             },
             {
               "$type": "Document",
@@ -1308,8 +1295,7 @@
               "RelativeToolTip": "ChildCare.Api\\Models\\Appointment.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAAwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:55:28.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T07:55:28.101Z"
             },
             {
               "$type": "Document",
@@ -1321,8 +1307,7 @@
               "RelativeToolTip": "ChildCare.Api\\Repositories\\ServiceRepository.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:43:46.333Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T07:43:46.333Z"
             },
             {
               "$type": "Document",
@@ -1334,8 +1319,7 @@
               "RelativeToolTip": "ChildCare.Api\\Models\\Service.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T06:16:09.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T06:16:09.179Z"
             },
             {
               "$type": "Document",
@@ -1347,8 +1331,7 @@
               "RelativeToolTip": "ChildCare.Api\\Models\\Feedback.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T08:26:30.14Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T08:26:30.14Z"
             },
             {
               "$type": "Document",
@@ -1360,8 +1343,7 @@
               "RelativeToolTip": "ChildCare.Api\\Repositories\\FeedbackRepository.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAYwEoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T08:25:08.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T08:25:08.483Z"
             },
             {
               "$type": "Document",
@@ -1373,8 +1355,7 @@
               "RelativeToolTip": "ChildCare.Api\\Controllers\\FeedbackController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T08:28:07.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T08:28:07.955Z"
             },
             {
               "$type": "Document",
@@ -1386,8 +1367,7 @@
               "RelativeToolTip": "ChildCare.Api\\Models\\User.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAowBUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T07:51:39.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T07:51:39.158Z"
             },
             {
               "$type": "Document",
@@ -1399,8 +1379,7 @@
               "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Edit.cshtml.cs",
               "ViewState": "AgIAAEYAAAAAAAAAAADwv18AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T10:30:15.514Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T10:30:15.514Z"
             },
             {
               "$type": "Document",
@@ -1412,8 +1391,7 @@
               "RelativeToolTip": "ChildCareAdmin\\Pages\\Users\\Edit.cshtml",
               "ViewState": "AgIAABkAAAAAAAAAAADwvzIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-24T10:29:59.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T10:29:59.993Z"
             },
             {
               "$type": "Document",
@@ -1425,8 +1403,7 @@
               "RelativeToolTip": "ChildCare.Api\\ChildCare.Api.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-24T07:36:41.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T07:36:41.28Z"
             },
             {
               "$type": "Document",
