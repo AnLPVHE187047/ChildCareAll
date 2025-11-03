@@ -15,7 +15,11 @@ public partial class Staff
 
     public bool? IsAvailable { get; set; }
 
+    public int? UserId { get; set; }
+
     public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 
     public virtual ICollection<Feedback> Feedbacks { get; set; } = new List<Feedback>();
+
+    public virtual User? User { get; set; }
 }

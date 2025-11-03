@@ -28,7 +28,7 @@ public class AppointmentDetailActivity extends AppCompatActivity {
     private View contentLayout;
     private MaterialButton btnCancelAppointment;
     private Appointment currentAppointment;
-
+    private String role;
     private int appointmentId;
 
     @Override
@@ -40,7 +40,7 @@ public class AppointmentDetailActivity extends AppCompatActivity {
         setupToolbar();
 
         appointmentId = getIntent().getIntExtra("appointmentId", -1);
-
+        role = getIntent().getStringExtra("role");
         if (appointmentId == -1) {
             Toast.makeText(this, "Invalid appointment ID", Toast.LENGTH_SHORT).show();
             finish();
@@ -113,16 +113,21 @@ public class AppointmentDetailActivity extends AppCompatActivity {
         setStatusColor(tvStatus, apt.getStatus());
         currentAppointment = apt;
 
-        if (apt.getStatus().equalsIgnoreCase("pending") || apt.getStatus().equalsIgnoreCase("confirmed")) {
-            btnCancelAppointment.setVisibility(View.VISIBLE);
-            btnCancelAppointment.setOnClickListener(v -> confirmCancelAppointment());
-        } else {
+        if ("Staff".equalsIgnoreCase(role)) {
             btnCancelAppointment.setVisibility(View.GONE);
+        } else {
+            if (apt.getStatus().equalsIgnoreCase("pending") || apt.getStatus().equalsIgnoreCase("confirmed")) {
+                btnCancelAppointment.setVisibility(View.VISIBLE);
+                btnCancelAppointment.setOnClickListener(v -> confirmCancelAppointment());
+            } else {
+                btnCancelAppointment.setVisibility(View.GONE);
+            }
         }
 
         String createdAt = formatDateTime(apt.getCreatedAt());
         tvCreatedAt.setText("Booked on: " + createdAt);
     }
+
     private void confirmCancelAppointment() {
         new androidx.appcompat.app.AlertDialog.Builder(this)
                 .setTitle("Cancel Appointment")

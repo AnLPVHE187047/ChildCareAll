@@ -55,11 +55,17 @@ public class LoginActivity extends AppCompatActivity {
                     SharedPreferences.Editor editor = prefs.edit();
                     editor.putString("token", user.getToken());
                     editor.putInt("userID", user.getUserID()); // 🔹 Lưu thêm userID
+                    editor.putString("role", user.getRole());
                     editor.apply();
 
                     Toast.makeText(LoginActivity.this, "Login successful!", Toast.LENGTH_SHORT).show();
 
-                    Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                    Intent intent;
+                    if ("staff".equalsIgnoreCase(user.getRole())) {
+                        intent = new Intent(LoginActivity.this, StaffHomeActivity.class);
+                    } else {
+                        intent = new Intent(LoginActivity.this, HomeActivity.class);
+                    }
                     intent.putExtra("fullName", user.getFullName());
                     intent.putExtra("email", user.getEmail());
                     startActivity(intent);

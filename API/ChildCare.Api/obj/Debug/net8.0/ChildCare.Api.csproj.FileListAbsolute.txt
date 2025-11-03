@@ -292,10 +292,10 @@ E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\staticwebassets\msbu
 E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ChildCare.Api.props
 E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ChildCare.Api.props
 E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\staticwebassets.pack.json
-E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\ChildCar.278604C9.Up2Date
 E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\ChildCare.Api.dll
 E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\refint\ChildCare.Api.dll
 E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\ChildCare.Api.pdb
 E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\ChildCare.Api.genruntimeconfig.cache
 E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\ref\ChildCare.Api.dll
+E:\GitRepos\ChildCareAll\API\ChildCare.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -7,3 +7,4 @@ wwwroot\images\services\tu-van-dinh-duong-cho-be-ava.jpg
 wwwroot\uploads\11c81ff0-f4d6-45f6-8734-d01538fbe48f.png
 wwwroot\uploads\6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg
 wwwroot\uploads\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png
+wwwroot\uploads\99df084f-fa0b-49ea-b468-4d1e5e4e6550.png

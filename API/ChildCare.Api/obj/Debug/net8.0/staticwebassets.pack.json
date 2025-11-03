@@ -37,6 +37,10 @@
       "PackagePath": "staticwebassets\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png"
     },
     {
+      "Id": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\99df084f-fa0b-49ea-b468-4d1e5e4e6550.png",
+      "PackagePath": "staticwebassets\\uploads\\99df084f-fa0b-49ea-b468-4d1e5e4e6550.png"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ChildCare.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

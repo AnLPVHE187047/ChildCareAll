@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "WNSOFfQq8sCAB6MD1fS70h8E/upWfVzCWEayhhDGcqw=",
+  "Hash": "tkLLDWixCfDCYqeTrR/6qJ1g08goLBMVa8t5LChRrzA=",
   "Source": "ChildCare.Api",
   "BasePath": "_content/ChildCare.Api",
   "Mode": "Default",
@@ -204,6 +204,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png"
+    },
+    {
+      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\99df084f-fa0b-49ea-b468-4d1e5e4e6550.png",
+      "SourceId": "ChildCare.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
+      "BasePath": "_content/ChildCare.Api",
+      "RelativePath": "uploads/99df084f-fa0b-49ea-b468-4d1e5e4e6550#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "go30etgxxy",
+      "Integrity": "oLQrrKn6rj1GvL6Q8Ye+eJSLxX94V50gw6XtIdA9zJ8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\99df084f-fa0b-49ea-b468-4d1e5e4e6550.png"
     }
   ],
   "Endpoints": [
@@ -942,6 +963,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-+x+Rm7hrZyQubKagJWQ6EdcYijwlpkMpDmzQRZ+JHpI="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/99df084f-fa0b-49ea-b468-4d1e5e4e6550.go30etgxxy.png",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\99df084f-fa0b-49ea-b468-4d1e5e4e6550.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "368976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oLQrrKn6rj1GvL6Q8Ye+eJSLxX94V50gw6XtIdA9zJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Nov 2025 16:05:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "go30etgxxy"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/99df084f-fa0b-49ea-b468-4d1e5e4e6550.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-oLQrrKn6rj1GvL6Q8Ye+eJSLxX94V50gw6XtIdA9zJ8="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/99df084f-fa0b-49ea-b468-4d1e5e4e6550.png",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\99df084f-fa0b-49ea-b468-4d1e5e4e6550.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "368976"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oLQrrKn6rj1GvL6Q8Ye+eJSLxX94V50gw6XtIdA9zJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Nov 2025 16:05:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oLQrrKn6rj1GvL6Q8Ye+eJSLxX94V50gw6XtIdA9zJ8="
         }
       ]
     }

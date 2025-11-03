@@ -19,6 +19,8 @@ public partial class ChildCareDbContext : DbContext
 
     public virtual DbSet<Feedback> Feedbacks { get; set; }
 
+    public virtual DbSet<Payment> Payments { get; set; }
+
     public virtual DbSet<Service> Services { get; set; }
 
     public virtual DbSet<Staff> Staff { get; set; }
@@ -27,7 +29,7 @@ public partial class ChildCareDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=LAPTOP-B7BG0NQ0;Database=ChildCareDB;User Id=sa;Password=123;TrustServerCertificate=True;Trusted_Connection=True;");
+        => optionsBuilder.UseSqlServer("Server= LAPTOP-B7BG0NQ0;database=ChildCareDB;uid=sa;pwd=123;TrustServerCertificate=True;Trusted_Connection=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -79,6 +81,34 @@ public partial class ChildCareDbContext : DbContext
                 .HasConstraintName("FK__Feedbacks__UserI__47DBAE45");
         });
 
+        modelBuilder.Entity<Payment>(entity =>
+        {
+            entity.HasKey(e => e.PaymentId).HasName("PK__Payments__9B556A58F2CD81DF");
+
+            entity.Property(e => e.PaymentId).HasColumnName("PaymentID");
+            entity.Property(e => e.Amount).HasColumnType("decimal(18, 2)");
+            entity.Property(e => e.AppointmentId).HasColumnName("AppointmentID");
+            entity.Property(e => e.PaymentDate).HasDefaultValueSql("(getdate())");
+            entity.Property(e => e.PaymentMethod).HasMaxLength(50);
+            entity.Property(e => e.PaymentStatus)
+                .HasMaxLength(50)
+                .HasDefaultValue("Pending");
+            entity.Property(e => e.TransactionId)
+                .HasMaxLength(100)
+                .HasColumnName("TransactionID");
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.HasOne(d => d.Appointment).WithMany(p => p.Payments)
+                .HasForeignKey(d => d.AppointmentId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Payments__Appoin__6477ECF3");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Payments)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Payments__UserID__656C112C");
+        });
+
         modelBuilder.Entity<Service>(entity =>
         {
             entity.HasKey(e => e.ServiceId).HasName("PK__Services__C51BB0EADC2292A1");
@@ -98,6 +128,11 @@ public partial class ChildCareDbContext : DbContext
             entity.Property(e => e.FullName).HasMaxLength(150);
             entity.Property(e => e.IsAvailable).HasDefaultValue(true);
             entity.Property(e => e.Phone).HasMaxLength(20);
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Staff)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK_Staff_Users");
         });
 
         modelBuilder.Entity<User>(entity =>

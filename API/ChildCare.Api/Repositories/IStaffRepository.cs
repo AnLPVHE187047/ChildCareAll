@@ -6,5 +6,15 @@ namespace ChildCare.Api.Repositories
     {
         Task<IEnumerable<StaffDropdownDTO>> GetAllForDropdownAsync();
         Task<IEnumerable<AppointmentResponseDTO>> GetStaffScheduleAsync(int staffId, DateOnly date);
+       
+        Task<IEnumerable<AppointmentResponseDTO>> FilterStaffAppointmentsAsync(
+            int staffId,
+            string? customerName,
+            int? month,
+            int? week
+        );
+
+        Task<AppointmentResponseDTO?> GetAppointmentDetailAsync(int appointmentId);
+        Task<int?> GetStaffIdByUserAsync(int userId);
     }
 }

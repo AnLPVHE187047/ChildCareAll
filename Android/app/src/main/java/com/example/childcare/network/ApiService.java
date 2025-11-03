@@ -74,4 +74,14 @@ public interface ApiService {
     );
     @PUT("appointments/{id}/cancel")
     Call<Void> cancelAppointment(@Path("id") int id);
+    @GET("staffs/{staffId}/appointments")
+    Call<List<Appointment>> getStaffAppointments(
+            @Path("staffId") int staffId,
+            @Query("customerName") String customerName,
+            @Query("month") Integer month,
+            @Query("week") Integer week
+    );
+    @GET("staffs/by-user/{userId}")
+    Call<Integer> getStaffIdByUser(@Path("userId") int userId);
+
 }

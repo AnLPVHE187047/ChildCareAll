@@ -23,6 +23,8 @@ public partial class Appointment
 
     public DateTime? CreatedAt { get; set; }
 
+    public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
+
     public virtual Service Service { get; set; } = null!;
 
     public virtual Staff? Staff { get; set; }

@@ -273,6 +273,43 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ChildCare.Api.Controllers.PaymentController",
+    "Method": "PaymentCallback",
+    "RelativePath": "api/payments/callback",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vnp_TxnRef",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "vnp_ResponseCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChildCare.Api.Controllers.PaymentController",
+    "Method": "CreatePayment",
+    "RelativePath": "api/payments/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ChildCare.Api.DTOs.PaymentCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ChildCare.Api.Controllers.ServiceController",
     "Method": "GetAll",
     "RelativePath": "api/services",
@@ -495,6 +532,37 @@
   },
   {
     "ContainingType": "ChildCare.Api.Controllers.StaffController",
+    "Method": "GetFilteredAppointments",
+    "RelativePath": "api/staffs/{staffId}/appointments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "staffId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "customerName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "month",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "week",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChildCare.Api.Controllers.StaffController",
     "Method": "GetStaffSchedule",
     "RelativePath": "api/staffs/{staffId}/schedule",
     "HttpMethod": "GET",
@@ -510,6 +578,38 @@
         "Name": "date",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChildCare.Api.Controllers.StaffController",
+    "Method": "GetAppointmentDetail",
+    "RelativePath": "api/staffs/appointments/{appointmentId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChildCare.Api.Controllers.StaffController",
+    "Method": "GetStaffIdByUser",
+    "RelativePath": "api/staffs/by-user/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
