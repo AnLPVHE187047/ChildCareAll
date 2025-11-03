@@ -26,6 +26,8 @@ public class AppointmentDetailActivity extends AppCompatActivity {
     private MaterialButton btnBack;
     private ProgressBar progressBar;
     private View contentLayout;
+    private MaterialButton btnCancelAppointment;
+    private Appointment currentAppointment;
 
     private int appointmentId;
 
@@ -57,6 +59,7 @@ public class AppointmentDetailActivity extends AppCompatActivity {
         tvStatus = findViewById(R.id.tvStatus);
         tvCreatedAt = findViewById(R.id.tvCreatedAt);
         btnBack = findViewById(R.id.btnBack);
+        btnCancelAppointment = findViewById(R.id.btnCancelAppointment);
         progressBar = findViewById(R.id.progressBar);
         contentLayout = findViewById(R.id.contentLayout);
     }
@@ -108,9 +111,50 @@ public class AppointmentDetailActivity extends AppCompatActivity {
 
         tvStatus.setText(apt.getStatus());
         setStatusColor(tvStatus, apt.getStatus());
+        currentAppointment = apt;
+
+        if (apt.getStatus().equalsIgnoreCase("pending") || apt.getStatus().equalsIgnoreCase("confirmed")) {
+            btnCancelAppointment.setVisibility(View.VISIBLE);
+            btnCancelAppointment.setOnClickListener(v -> confirmCancelAppointment());
+        } else {
+            btnCancelAppointment.setVisibility(View.GONE);
+        }
 
         String createdAt = formatDateTime(apt.getCreatedAt());
         tvCreatedAt.setText("Booked on: " + createdAt);
+    }
+    private void confirmCancelAppointment() {
+        new androidx.appcompat.app.AlertDialog.Builder(this)
+                .setTitle("Cancel Appointment")
+                .setMessage("Are you sure you want to cancel this appointment?")
+                .setPositiveButton("Yes", (dialog, which) -> cancelAppointment())
+                .setNegativeButton("No", null)
+                .show();
+    }
+
+    private void cancelAppointment() {
+        showLoading(true);
+        ApiService api = ApiClient.getClientWithAuth(this).create(ApiService.class);
+        api.cancelAppointment(currentAppointment.getAppointmentID()).enqueue(new Callback<Void>() {
+            @Override
+            public void onResponse(Call<Void> call, Response<Void> response) {
+                showLoading(false);
+                if (response.isSuccessful()) {
+                    Toast.makeText(AppointmentDetailActivity.this, "Appointment cancelled successfully.", Toast.LENGTH_SHORT).show();
+                    btnCancelAppointment.setVisibility(View.GONE);
+                    tvStatus.setText("Cancelled");
+                    setStatusColor(tvStatus, "cancelled");
+                } else {
+                    Toast.makeText(AppointmentDetailActivity.this, "Failed to cancel appointment.", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Void> call, Throwable t) {
+                showLoading(false);
+                Toast.makeText(AppointmentDetailActivity.this, "Error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private String formatDate(String dateStr) {

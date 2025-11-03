@@ -72,4 +72,6 @@ public interface ApiService {
             @Part("IsActive") RequestBody isActive,
             @Part MultipartBody.Part imageFile
     );
+    @PUT("appointments/{id}/cancel")
+    Call<Void> cancelAppointment(@Path("id") int id);
 }
