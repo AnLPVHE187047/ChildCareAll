@@ -28,8 +28,7 @@ public class ApiClient {
         OkHttpClient client = new OkHttpClient.Builder()
                 .addInterceptor(chain -> {
                     Request original = chain.request();
-                    Request.Builder requestBuilder = original.newBuilder()
-                            .header("Content-Type", "application/json");
+                    Request.Builder requestBuilder = original.newBuilder();
 
                     if (token != null) {
                         requestBuilder.header("Authorization", "Bearer " + token);

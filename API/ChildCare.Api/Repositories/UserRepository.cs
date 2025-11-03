@@ -148,7 +148,6 @@ namespace ChildCare.Api.Repositories
         public async Task<bool> UpdateUserWithImageAsync(int id, UserUpdateDTO dto, IFormFile? imageFile, IWebHostEnvironment env, HttpRequest request)
         {
             var user = await _context.Users.FindAsync(id);
-            user.IsActive ??= true;
             if (user == null) return false;
 
             user.FullName = dto.FullName;
@@ -163,11 +162,16 @@ namespace ChildCare.Api.Repositories
                 if (!Directory.Exists(uploadsFolder))
                     Directory.CreateDirectory(uploadsFolder);
 
+                // Xóa ảnh cũ
                 if (!string.IsNullOrEmpty(user.ImageUrl))
                 {
                     try
                     {
-                        string oldFileName = Path.GetFileName(user.ImageUrl);
+                        // ✅ Lấy tên file từ URL (dù là relative hay absolute)
+                        string oldFileName = user.ImageUrl.Contains("/uploads/")
+                            ? user.ImageUrl.Split("/uploads/").Last()
+                            : Path.GetFileName(user.ImageUrl);
+
                         string oldFilePath = Path.Combine(uploadsFolder, oldFileName);
                         if (File.Exists(oldFilePath))
                         {
@@ -179,7 +183,7 @@ namespace ChildCare.Api.Repositories
                         Console.WriteLine($"[WARN] Failed to delete old image: {ex.Message}");
                     }
                 }
-
+                
                 string uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
                 string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
@@ -189,13 +193,11 @@ namespace ChildCare.Api.Repositories
                 }
 
                 user.ImageUrl = $"/uploads/{uniqueFileName}";
-                user.ImageUrl = $"{request.Scheme}://{request.Host}{user.ImageUrl}";
             }
 
             await _context.SaveChangesAsync();
             return true;
         }
-
 
         #endregion
 
