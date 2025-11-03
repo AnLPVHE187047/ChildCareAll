@@ -43,53 +43,61 @@ public class StaffAppointmentAdapter extends RecyclerView.Adapter<StaffAppointme
         View view = LayoutInflater.from(context).inflate(R.layout.item_appointment_card, parent, false);
         return new ViewHolder(view);
     }
-    public String formatDate(String dateStr) {
+    private String formatDate(String dateStr) {
         try {
-            // Giả sử API trả về ngày theo định dạng ISO: "yyyy-MM-dd'T'HH:mm:ss"
             SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.US);
             SimpleDateFormat outputFormat = new SimpleDateFormat("EEE, dd MMM yyyy", Locale.US);
             Date date = inputFormat.parse(dateStr);
             return outputFormat.format(date);
-        } catch (ParseException e) {
-            e.printStackTrace();
-            return dateStr; // Trả về nguyên bản nếu lỗi
+        } catch (Exception e) {
+            return dateStr;
         }
     }
+
+    private String formatTime(String timeStr) {
+        try {
+            String[] parts = timeStr.split(":");
+            if (parts.length >= 2) {
+                int hour = Integer.parseInt(parts[0]);
+                int min = Integer.parseInt(parts[1]);
+                return String.format(Locale.US, "%02d:%02d", hour, min);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return timeStr;
+    }
+
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Appointment a = appointments.get(position);
-
-        holder.tvDate.setText(formatDate(a.getAppointmentDate()));
+        holder.tvDate.setText(formatDate(a.getAppointmentDate()) + " " + formatTime(a.getAppointmentTime()));
         holder.tvCustomer.setText("Khách: " + a.getUserName());
         holder.tvService.setText("Dịch vụ: " + a.getServiceName());
         holder.tvStatus.setText("Trạng thái: " + a.getStatus());
 
-        // Set status color
-        switch (a.getStatus().toLowerCase()) {
-            case "pending":
-                holder.tvStatus.setTextColor(Color.parseColor("#FFA000"));
-                break;
-            case "confirmed":
-                holder.tvStatus.setTextColor(Color.parseColor("#4CAF50"));
-                break;
-            case "completed":
-                holder.tvStatus.setTextColor(Color.parseColor("#2196F3"));
-                break;
-            case "cancelled":
-                holder.tvStatus.setTextColor(Color.parseColor("#F44336"));
-                break;
-            default:
-                holder.tvStatus.setTextColor(Color.parseColor("#757575"));
-                break;
+        if (isNearNow(a.getAppointmentDate(), a.getAppointmentTime())) {
+            holder.itemView.setBackgroundColor(Color.parseColor("#FFF9C4")); // nền vàng nhạt
+        } else {
+            holder.itemView.setBackgroundColor(Color.WHITE);
         }
 
-        // Click listener
         holder.itemView.setOnClickListener(v -> {
-            if (listener != null) {
-                listener.onItemClick(a);
-            }
+            if (listener != null) listener.onItemClick(a);
         });
     }
+
+    private boolean isNearNow(String dateStr, String timeStr) {
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.US);
+            Date appointmentDate = sdf.parse(dateStr + "T" + timeStr + ":00"); // tạo Date full
+            long diff = appointmentDate.getTime() - new Date().getTime();
+            return diff >= 0 && diff <= 3600 * 1000; // trong 1 giờ tới
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
 
 
     @Override

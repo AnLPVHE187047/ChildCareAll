@@ -20,7 +20,6 @@
             app:title="Lịch làm việc"
             app:titleTextColor="@android:color/white"
             app:navigationIcon="@drawable/ic_menu" />
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <!-- Content -->
@@ -28,43 +27,52 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:padding="12dp">
+        android:padding="12dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <!-- Filter Row -->
-        <LinearLayout
+        <!-- Filter Card -->
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_marginBottom="8dp"
-            android:weightSum="2">
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:padding="12dp">
 
-            <EditText
-                android:id="@+id/edtSearchCustomer"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Tìm khách hàng"
-                android:padding="8dp"
-                android:background="@android:drawable/edit_text"
-                android:drawableStart="@android:drawable/ic_menu_search"
-                android:drawablePadding="8dp"/>
+                android:orientation="vertical">
 
-            <Spinner
-                android:id="@+id/spnMonth"
-                android:layout_width="0dp"
-                android:layout_weight="0.5"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"/>
+                <EditText
+                    android:id="@+id/edtSearchCustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Tìm khách hàng"
+                    android:padding="8dp"
+                    android:background="@drawable/bg_search"
+                    android:layout_marginBottom="8dp"/>
 
-            <Spinner
-                android:id="@+id/spnWeek"
-                android:layout_width="0dp"
-                android:layout_weight="0.5"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"/>
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spnMonth"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+                    <Spinner
+                        android:id="@+id/spnWeek"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <!-- RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
@@ -73,32 +81,40 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:clipToPadding="false"
-            android:paddingBottom="12dp"/>
+            android:paddingBottom="8dp" />
 
         <!-- Empty State -->
         <LinearLayout
             android:id="@+id/tvEmptyState"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:visibility="gone">
+            android:gravity="center"
+            android:visibility="gone"
+            android:padding="24dp">
 
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@android:drawable/ic_menu_info_details"
                 android:alpha="0.5"
-                android:tint="#999" />
+                android:tint="#999999" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Không có lịch làm việc"
                 android:textSize="18sp"
-                android:textColor="#666"
+                android:textColor="#666666"
                 android:textStyle="bold"
                 android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/btnRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tải lại"
+                android:layout_marginTop="12dp"/>
         </LinearLayout>
 
         <!-- Loading -->
@@ -110,5 +126,4 @@
             android:visibility="gone" />
 
     </LinearLayout>
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -5,6 +5,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -30,6 +32,7 @@ public class StaffHomeActivity extends AppCompatActivity {
     private LinearLayout tvEmptyState;
     private StaffAppointmentAdapter adapter;
     private List<Appointment> appointmentList = new ArrayList<>();
+    private Timer pollingTimer;
 
     private EditText edtSearchCustomer;
     private Spinner spnMonth, spnWeek;
@@ -62,10 +65,30 @@ public class StaffHomeActivity extends AppCompatActivity {
         // Load staff ID
         SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         int userId = prefs.getInt("userID", 0);
+        startPolling();
         fetchStaffId(userId);
         setupListeners();
         findViewById(R.id.toolbarStaff).setOnClickListener(v -> onBackPressed());
     }
+    private void startPolling() {
+        pollingTimer = new Timer();
+        pollingTimer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                // Chạy trên UI thread vì loadAppointments() sẽ cập nhật RecyclerView
+                runOnUiThread(() -> loadAppointments());
+            }
+        }, 0, 60000); // 0ms delay, lặp lại mỗi 60 giây
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (pollingTimer != null) {
+            pollingTimer.cancel();
+            pollingTimer = null;
+        }
+    }
+
     private void setupListeners() {
         // Search customer theo tên
         edtSearchCustomer.addTextChangedListener(new android.text.TextWatcher() {
