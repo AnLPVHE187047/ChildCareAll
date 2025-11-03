@@ -5,5 +5,5 @@ wwwroot\images\services\Screenshot 2025-10-29 154632.png
 wwwroot\images\services\tiem_vac_xin_cho_tre_2207213354.jpeg
 wwwroot\images\services\tu-van-dinh-duong-cho-be-ava.jpg
 wwwroot\uploads\11c81ff0-f4d6-45f6-8734-d01538fbe48f.png
-wwwroot\uploads\517d594a-131f-4762-9348-104385bd32af.png
+wwwroot\uploads\6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg
 wwwroot\uploads\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png

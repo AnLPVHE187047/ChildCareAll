@@ -248,6 +248,20 @@ namespace ChildCare.Api.Repositories
               .ThenByDescending(a => a.AppointmentTime)
               .ToList();
         }
+        public async Task<bool> CancelAsync(int id, int userId)
+        {
+            var appointment = await _context.Appointments.FirstOrDefaultAsync(a => a.AppointmentId == id && a.UserId == userId);
+            if (appointment == null)
+                return false; 
+
+            if (appointment.Status != "Pending")
+                throw new Exception("You can only cancel appointments that are still pending.");
+
+            appointment.Status = "Cancelled";
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
 
 
     }

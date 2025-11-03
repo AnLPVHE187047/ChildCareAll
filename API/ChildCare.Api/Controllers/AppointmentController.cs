@@ -115,6 +115,29 @@ namespace ChildCare.Api.Controllers
             var result = await _repo.FilterAppointmentsAsync(userName, month, week, status);
             return Ok(result);
         }
+        [HttpPut("{id}/cancel")]
+        public async Task<IActionResult> CancelAppointment(int id)
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+            if (userIdClaim == null)
+                return Unauthorized("Token missing user ID");
+
+            int userId = int.Parse(userIdClaim.Value);
+
+            try
+            {
+                var ok = await _repo.CancelAsync(id, userId);
+                if (!ok)
+                    return NotFound("Appointment not found or not owned by this user");
+
+                return Ok(new { message = "Appointment cancelled successfully" });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
+        }
+
 
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ChildCare.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+176b00930f07f6dac8e51ac6973f20924a949ea8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b953bf9ce3e7c6eb9d584365a85086a88cb47e17")]
 [assembly: System.Reflection.AssemblyProductAttribute("ChildCare.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ChildCare.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

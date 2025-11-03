@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T+5m1Q9QQrHCmaq4ULYsskI73GdfXinGoTrkeDh1RA0=",
+  "Hash": "WNSOFfQq8sCAB6MD1fS70h8E/upWfVzCWEayhhDGcqw=",
   "Source": "ChildCare.Api",
   "BasePath": "_content/ChildCare.Api",
   "Mode": "Default",
@@ -164,12 +164,12 @@
       "OriginalItemSpec": "wwwroot\\uploads\\11c81ff0-f4d6-45f6-8734-d01538fbe48f.png"
     },
     {
-      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\517d594a-131f-4762-9348-104385bd32af.png",
+      "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg",
       "SourceId": "ChildCare.Api",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\",
       "BasePath": "_content/ChildCare.Api",
-      "RelativePath": "uploads/517d594a-131f-4762-9348-104385bd32af#[.{fingerprint}]?.png",
+      "RelativePath": "uploads/6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -178,11 +178,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dm4bz4ox2o",
-      "Integrity": "28CqUv/nALftrTiDQ9+RYtq9A22zNnSGUJSft1YtiD0=",
+      "Fingerprint": "yzgtqpeitg",
+      "Integrity": "skZ2guhhuevetiJOmNJ9byKvbp7kmBK+f+w1fBqmdts=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\517d594a-131f-4762-9348-104385bd32af.png"
+      "OriginalItemSpec": "wwwroot\\uploads\\6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg"
     },
     {
       "Identity": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
@@ -782,8 +782,8 @@
       ]
     },
     {
-      "Route": "uploads/517d594a-131f-4762-9348-104385bd32af.dm4bz4ox2o.png",
-      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\517d594a-131f-4762-9348-104385bd32af.png",
+      "Route": "uploads/6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -792,64 +792,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "754029"
+          "Value": "34433"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"28CqUv/nALftrTiDQ9+RYtq9A22zNnSGUJSft1YtiD0=\""
+          "Value": "\"skZ2guhhuevetiJOmNJ9byKvbp7kmBK+f+w1fBqmdts=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 02 Nov 2025 10:27:50 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "dm4bz4ox2o"
-        },
-        {
-          "Name": "label",
-          "Value": "uploads/517d594a-131f-4762-9348-104385bd32af.png"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-28CqUv/nALftrTiDQ9+RYtq9A22zNnSGUJSft1YtiD0="
-        }
-      ]
-    },
-    {
-      "Route": "uploads/517d594a-131f-4762-9348-104385bd32af.png",
-      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\517d594a-131f-4762-9348-104385bd32af.png",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "754029"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/png"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"28CqUv/nALftrTiDQ9+RYtq9A22zNnSGUJSft1YtiD0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 02 Nov 2025 10:27:50 GMT"
+          "Value": "Mon, 03 Nov 2025 09:51:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -859,7 +814,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-28CqUv/nALftrTiDQ9+RYtq9A22zNnSGUJSft1YtiD0="
+          "Value": "sha256-skZ2guhhuevetiJOmNJ9byKvbp7kmBK+f+w1fBqmdts="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.yzgtqpeitg.jpg",
+      "AssetFile": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34433"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"skZ2guhhuevetiJOmNJ9byKvbp7kmBK+f+w1fBqmdts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 03 Nov 2025 09:51:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yzgtqpeitg"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-skZ2guhhuevetiJOmNJ9byKvbp7kmBK+f+w1fBqmdts="
         }
       ]
     },

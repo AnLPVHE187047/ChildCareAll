@@ -17,7 +17,6 @@ namespace ChildCare.Api.Repositories
       int? week,
       string? status,
       int? userId = null);
-
-
+        Task<bool> CancelAsync(int id, int userId);
     }
 }
