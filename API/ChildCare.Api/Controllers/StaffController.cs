@@ -37,12 +37,13 @@ namespace ChildCare.Api.Controllers
         }
         [HttpGet("{staffId}/appointments")]
         public async Task<IActionResult> GetFilteredAppointments(
-          int staffId,
-          [FromQuery] string? customerName,
-          [FromQuery] int? month,
-          [FromQuery] int? week)
+      int staffId,
+      [FromQuery] string? customerName,
+      [FromQuery] int? month,
+      [FromQuery] int? week,
+      [FromQuery] int? dayOfWeek)
         {
-            var appointments = await _repo.FilterStaffAppointmentsAsync(staffId, customerName, month, week);
+            var appointments = await _repo.FilterStaffAppointmentsAsync(staffId, customerName, month, week, dayOfWeek);
             return Ok(appointments);
         }
 
@@ -64,6 +65,23 @@ namespace ChildCare.Api.Controllers
 
             return Ok(staffId);
         }
+        [HttpPut("appointments/{appointmentId}/status")]
+        public async Task<IActionResult> UpdateAppointmentStatus(int appointmentId, [FromQuery] string status)
+        {
+            if (string.IsNullOrEmpty(status))
+                return BadRequest(new { message = "Status is required" });
+
+            var allowed = new[] { "Pending", "Confirmed", "Completed", "Cancelled" };
+            if (!allowed.Contains(status))
+                return BadRequest(new { message = "Invalid status value" });
+
+            var result = await _repo.UpdateAppointmentStatusAsync(appointmentId, status);
+            if (!result)
+                return NotFound(new { message = "Appointment not found" });
+
+            return NoContent();
+        }
+
 
     }
 }

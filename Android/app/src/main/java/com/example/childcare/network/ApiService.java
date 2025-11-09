@@ -2,6 +2,7 @@ package com.example.childcare.network;
 
 import com.example.childcare.models.Appointment;
 import com.example.childcare.models.AppointmentCreateRequest;
+import com.example.childcare.models.Feedback;
 import com.example.childcare.models.LoginRequest;
 import com.example.childcare.models.RegisterRequest;
 import com.example.childcare.models.Service;
@@ -21,7 +22,8 @@ import retrofit2.http.PUT;
 import retrofit2.http.Part;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
-
+import com.example.childcare.models.FeedbackCreateRequest;
+import com.example.childcare.models.AppointmentFeedbackDTO;
 public interface ApiService {
     @POST("auth/login")
     Call<UserResponse> login(@Body LoginRequest request);
@@ -47,7 +49,6 @@ public interface ApiService {
             @Query("date") String date
     );
 
-    // Chỉnh sửa để hỗ trợ filter
     @GET("appointments/my-appointments")
     Call<List<Appointment>> getMyAppointments(
             @Query("userName") String userName,
@@ -72,16 +73,35 @@ public interface ApiService {
             @Part("IsActive") RequestBody isActive,
             @Part MultipartBody.Part imageFile
     );
+
     @PUT("appointments/{id}/cancel")
     Call<Void> cancelAppointment(@Path("id") int id);
+
     @GET("staffs/{staffId}/appointments")
     Call<List<Appointment>> getStaffAppointments(
             @Path("staffId") int staffId,
             @Query("customerName") String customerName,
             @Query("month") Integer month,
-            @Query("week") Integer week
+            @Query("week") Integer week,
+            @Query("dayOfWeek") Integer dayOfWeek
     );
+
+    @PUT("staffs/appointments/{appointmentId}/status")
+    Call<Void> updateAppointmentStatus(
+            @Path("appointmentId") int appointmentId,
+            @Query("status") String status
+    );
+
     @GET("staffs/by-user/{userId}")
     Call<Integer> getStaffIdByUser(@Path("userId") int userId);
+    // Feedback APIs
+    @POST("feedbacks")
+    Call<Feedback> createFeedback(@Body FeedbackCreateRequest request);
+
+    @GET("feedbacks/completed/{userId}")
+    Call<List<AppointmentFeedbackDTO>> getCompletedAppointmentsForFeedback(@Path("userId") int userId);
+
+    @GET("feedbacks")
+    Call<List<Feedback>> getAllFeedbacks();
 
 }

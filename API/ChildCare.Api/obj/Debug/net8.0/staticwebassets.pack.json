@@ -29,16 +29,16 @@
       "PackagePath": "staticwebassets\\uploads\\11c81ff0-f4d6-45f6-8734-d01538fbe48f.png"
     },
     {
-      "Id": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg",
-      "PackagePath": "staticwebassets\\uploads\\6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg"
-    },
-    {
       "Id": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png",
       "PackagePath": "staticwebassets\\uploads\\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png"
     },
     {
       "Id": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\99df084f-fa0b-49ea-b468-4d1e5e4e6550.png",
       "PackagePath": "staticwebassets\\uploads\\99df084f-fa0b-49ea-b468-4d1e5e4e6550.png"
+    },
+    {
+      "Id": "E:\\GitRepos\\ChildCareAll\\API\\ChildCare.Api\\wwwroot\\uploads\\ac19c8a9-90ff-4141-8e5b-f0d9a743320e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ac19c8a9-90ff-4141-8e5b-f0d9a743320e.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ChildCare.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

@@ -21,11 +21,12 @@
         public string? UserName { get; set; }
         public string? ServiceName { get; set; }
         public string? StaffName { get; set; }
+        public int? StaffID { get; set; }  // Thêm field này
         public DateTime AppointmentDate { get; set; }
         public TimeSpan AppointmentTime { get; set; }
         public string? Address { get; set; }
         public string? Status { get; set; }
         public DateTime? CreatedAt { get; set; }
     }
-  
+
 }

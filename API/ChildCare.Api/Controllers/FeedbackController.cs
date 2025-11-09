@@ -1,11 +1,13 @@
 ﻿using ChildCare.Api.DTOs;
 using ChildCare.Api.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ChildCare.Api.Controllers
 {
     [Route("api/feedbacks")]
     [ApiController]
+    [Authorize]
     public class FeedbackController : ControllerBase
     {
         private readonly IFeedbackRepository _repo;
@@ -26,10 +28,17 @@ namespace ChildCare.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(FeedbackCreateDTO dto)
+        public async Task<IActionResult> Create([FromBody] FeedbackCreateDTO dto)
         {
-            var item = await _repo.CreateAsync(dto);
-            return CreatedAtAction(nameof(GetById), new { id = item.FeedbackID }, item);
+            try
+            {
+                var item = await _repo.CreateAsync(dto);
+                return CreatedAtAction(nameof(GetById), new { id = item.FeedbackID }, item);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new { message = ex.Message });
+            }
         }
 
         [HttpDelete("{id}")]
@@ -38,5 +47,12 @@ namespace ChildCare.Api.Controllers
             var ok = await _repo.DeleteAsync(id);
             return ok ? NoContent() : NotFound();
         }
+        [HttpGet("completed/{userId}")]
+        public async Task<IActionResult> GetCompletedAppointmentsForFeedback(int userId)
+        {
+            var result = await _repo.GetCompletedAppointmentsForFeedbackAsync(userId);
+            return Ok(result);
+        }
+
     }
 }

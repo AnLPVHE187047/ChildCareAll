@@ -144,7 +144,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="top">
+            android:gravity="top"
+            android:layout_marginBottom="12dp">
 
             <ImageView
                 android:layout_width="18dp"
@@ -166,6 +167,17 @@
                 android:ellipsize="end" />
 
         </LinearLayout>
+
+        <!-- Feedback Button (Only show for Completed appointments) -->
+        <Button
+            android:id="@+id/btnFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⭐ Đánh giá dịch vụ"
+            android:textAllCaps="false"
+            android:backgroundTint="#FF9800"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
 
     </LinearLayout>
 

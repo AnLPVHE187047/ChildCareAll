@@ -126,24 +126,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\11c81ff0-f4d6-45f6-8734-d01538fbe48f.png'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>ChildCare.Api</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/ChildCare.Api</BasePath>
-      <RelativePath>uploads/6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>yzgtqpeitg</Fingerprint>
-      <Integrity>skZ2guhhuevetiJOmNJ9byKvbp7kmBK+f+w1fBqmdts=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\6db9b0ec-87bc-4b9d-8cb3-e68713b3ed59.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\8f31d7c4-6178-4b4f-995d-1d2e999ec14b.png'))">
       <SourceType>Package</SourceType>
       <SourceId>ChildCare.Api</SourceId>
@@ -179,6 +161,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\99df084f-fa0b-49ea-b468-4d1e5e4e6550.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ac19c8a9-90ff-4141-8e5b-f0d9a743320e.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>ChildCare.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ChildCare.Api</BasePath>
+      <RelativePath>uploads/ac19c8a9-90ff-4141-8e5b-f0d9a743320e.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>jgbnqm0wm7</Fingerprint>
+      <Integrity>wwtvg70rT8Rd4xTtef+WYFBQKv25F4TpEWfDQIqugH4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\uploads\ac19c8a9-90ff-4141-8e5b-f0d9a743320e.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>

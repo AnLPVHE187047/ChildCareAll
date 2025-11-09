@@ -273,6 +273,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ChildCare.Api.Controllers.FeedbackController",
+    "Method": "GetCompletedAppointmentsForFeedback",
+    "RelativePath": "api/feedbacks/completed/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ChildCare.Api.Controllers.PaymentController",
     "Method": "PaymentCallback",
     "RelativePath": "api/payments/callback",
@@ -557,6 +573,11 @@
         "Name": "week",
         "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
+      },
+      {
+        "Name": "dayOfWeek",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -594,6 +615,27 @@
         "Name": "appointmentId",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ChildCare.Api.Controllers.StaffController",
+    "Method": "UpdateAppointmentStatus",
+    "RelativePath": "api/staffs/appointments/{appointmentId}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "appointmentId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

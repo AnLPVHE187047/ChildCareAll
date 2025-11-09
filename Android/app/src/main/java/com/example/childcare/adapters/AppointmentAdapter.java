@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
@@ -25,6 +26,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
 
     public interface OnItemClickListener {
         void onItemClick(Appointment appointment);
+        void onFeedbackClick(Appointment appointment);
     }
 
     public AppointmentAdapter(Context context, List<Appointment> appointments, OnItemClickListener listener) {
@@ -60,6 +62,22 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
         // Status với màu sắc
         holder.tvStatus.setText(apt.getStatus());
         setStatusColor(holder.tvStatus, apt.getStatus());
+
+        // Hiển thị nút Feedback nếu status là Completed
+        if ("Completed".equalsIgnoreCase(apt.getStatus())) {
+            holder.btnFeedback.setVisibility(View.VISIBLE);
+            if (apt.isFeedbackGiven()) {
+                holder.btnFeedback.setText("Đã đánh giá");
+                holder.btnFeedback.setEnabled(false);
+            } else {
+                holder.btnFeedback.setText("⭐ Đánh giá dịch vụ");
+                holder.btnFeedback.setEnabled(true);
+                holder.btnFeedback.setOnClickListener(v -> listener.onFeedbackClick(apt));
+            }
+        } else {
+            holder.btnFeedback.setVisibility(View.GONE);
+        }
+
 
         holder.cardView.setOnClickListener(v -> listener.onItemClick(apt));
     }
@@ -120,6 +138,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
     static class ViewHolder extends RecyclerView.ViewHolder {
         CardView cardView;
         TextView tvServiceName, tvStaffName, tvDate, tvTime, tvAddress, tvStatus;
+        Button btnFeedback;
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -130,6 +149,7 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
             tvTime = itemView.findViewById(R.id.tvTime);
             tvAddress = itemView.findViewById(R.id.tvAddress);
             tvStatus = itemView.findViewById(R.id.tvStatus);
+            btnFeedback = itemView.findViewById(R.id.btnFeedback);
         }
     }
 }

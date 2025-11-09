@@ -52,17 +52,35 @@ namespace ChildCare.Api.Repositories
 
         public async Task<FeedbackResponseDTO> CreateAsync(FeedbackCreateDTO dto)
         {
+            bool hasCompletedAppointment = await _context.Appointments.AnyAsync(a =>
+                a.UserId == dto.UserID &&
+                a.StaffId == dto.StaffID &&
+                a.Status == "Completed");
+
+            if (!hasCompletedAppointment)
+                throw new Exception("You can only feedback after completed appointments.");
+
+            bool alreadyFeedback = await _context.Feedbacks.AnyAsync(f =>
+                f.UserId == dto.UserID &&
+                f.StaffId == dto.StaffID);
+
+            if (alreadyFeedback)
+                throw new Exception("You have already given feedback for this staff.");
+
             var f = new Feedback
             {
                 UserId = dto.UserID,
                 StaffId = dto.StaffID,
                 Rating = dto.Rating,
-                Comment = dto.Comment
+                Comment = dto.Comment,
+                CreatedAt = DateTime.UtcNow
             };
+
             _context.Feedbacks.Add(f);
             await _context.SaveChangesAsync();
 
-            return await GetByIdAsync(f.FeedbackId) ?? throw new Exception("Creation failed");
+            return await GetByIdAsync(f.FeedbackId)
+                ?? throw new Exception("Feedback creation failed.");
         }
 
         public async Task<bool> DeleteAsync(int id)
@@ -73,6 +91,26 @@ namespace ChildCare.Api.Repositories
             _context.Feedbacks.Remove(f);
             await _context.SaveChangesAsync();
             return true;
+        }
+        public async Task<IEnumerable<AppointmentFeedbackDTO>> GetCompletedAppointmentsForFeedbackAsync(int userId)
+        {
+            var completedAppointments = await _context.Appointments
+                .Include(a => a.Service)
+                .Include(a => a.Staff)
+                .Where(a => a.UserId == userId && a.Status == "Completed")
+                .Select(a => new AppointmentFeedbackDTO
+                {
+                    AppointmentID = a.AppointmentId,
+                    ServiceName = a.Service.Name,
+                    StaffName = a.Staff != null ? a.Staff.FullName : "N/A",
+                    AppointmentDate = a.AppointmentDate,
+                    AppointmentTime = a.AppointmentTime,
+                    IsFeedbackGiven = _context.Feedbacks.Any(f =>
+                        f.UserId == userId && f.StaffId == a.StaffId)
+                })
+                .ToListAsync();
+
+            return completedAppointments;
         }
     }
 }

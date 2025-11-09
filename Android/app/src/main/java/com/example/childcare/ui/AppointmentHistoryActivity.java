@@ -1,6 +1,7 @@
 package com.example.childcare.ui;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,6 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.childcare.R;
 import com.example.childcare.adapters.AppointmentAdapter;
 import com.example.childcare.models.Appointment;
+import com.example.childcare.models.AppointmentFeedbackDTO;
 import com.example.childcare.network.ApiClient;
 import com.example.childcare.network.ApiService;
 
@@ -72,12 +74,32 @@ public class AppointmentHistoryActivity extends AppCompatActivity {
 
     private void setupRecyclerView() {
         rvAppointments.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new AppointmentAdapter(this, appointmentList, appointment -> {
-            Intent intent = new Intent(AppointmentHistoryActivity.this, AppointmentDetailActivity.class);
-            intent.putExtra("appointmentId", appointment.getAppointmentID());
-            startActivity(intent);
+        adapter = new AppointmentAdapter(this, appointmentList, new AppointmentAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(Appointment appointment) {
+                Intent intent = new Intent(AppointmentHistoryActivity.this, AppointmentDetailActivity.class);
+                intent.putExtra("appointmentId", appointment.getAppointmentID());
+                startActivity(intent);
+            }
+
+            @Override
+            public void onFeedbackClick(Appointment appointment) {
+                // Open Feedback Activity
+                Intent intent = new Intent(AppointmentHistoryActivity.this, FeedbackActivity.class);
+                intent.putExtra("appointmentId", appointment.getAppointmentID());
+                intent.putExtra("staffId", extractStaffId(appointment));
+                intent.putExtra("serviceName", appointment.getServiceName());
+                intent.putExtra("staffName", appointment.getStaffName());
+                intent.putExtra("appointmentDate", appointment.getAppointmentDate());
+                startActivity(intent);
+            }
         });
         rvAppointments.setAdapter(adapter);
+    }
+
+    private int extractStaffId(Appointment appointment) {
+        Integer staffId = appointment.getStaffID();
+        return staffId != null ? staffId : 0;
     }
 
     private void setupFilters() {
@@ -124,10 +146,11 @@ public class AppointmentHistoryActivity extends AppCompatActivity {
 
     private void loadAppointments() {
         showLoading(true);
-
         String nameFilter = etSearchName.getText().toString().trim();
 
         ApiService api = ApiClient.getClientWithAuth(this).create(ApiService.class);
+
+        // 1️⃣ Lấy danh sách appointments
         api.getMyAppointments(nameFilter, selectedMonth, null, selectedStatus)
                 .enqueue(new Callback<List<Appointment>>() {
                     @Override
@@ -137,9 +160,10 @@ public class AppointmentHistoryActivity extends AppCompatActivity {
                         if (response.isSuccessful() && response.body() != null) {
                             appointmentList.clear();
                             appointmentList.addAll(response.body());
-                            adapter.notifyDataSetChanged();
-
                             showEmptyState(appointmentList.isEmpty());
+
+                            // 2️⃣ Sau khi load xong appointments, gọi API feedback
+                            checkFeedbackStatus();
                         } else {
                             Toast.makeText(AppointmentHistoryActivity.this,
                                     "Failed to load appointments", Toast.LENGTH_SHORT).show();
@@ -154,6 +178,43 @@ public class AppointmentHistoryActivity extends AppCompatActivity {
                     }
                 });
     }
+    private int getCurrentUserId() {
+        SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        return prefs.getInt("userID", 0); // 0 nếu chưa login
+    }
+
+    private void checkFeedbackStatus() {
+        ApiService api = ApiClient.getClientWithAuth(this).create(ApiService.class);
+        int userId = getCurrentUserId(); // Hàm lấy user hiện tại
+
+        api.getCompletedAppointmentsForFeedback(userId)
+                .enqueue(new Callback<List<AppointmentFeedbackDTO>>() {
+                    @Override
+                    public void onResponse(Call<List<AppointmentFeedbackDTO>> call, Response<List<AppointmentFeedbackDTO>> response) {
+                        if (response.isSuccessful() && response.body() != null) {
+                            List<AppointmentFeedbackDTO> feedbacks = response.body();
+
+                            for (Appointment apt : appointmentList) {
+                                boolean alreadyGiven = false;
+                                for (AppointmentFeedbackDTO f : feedbacks) {
+                                    if (f.getAppointmentID() == apt.getAppointmentID() && f.isFeedbackGiven()) {
+                                        alreadyGiven = true;
+                                        break;
+                                    }
+                                }
+                                apt.setFeedbackGiven(alreadyGiven);
+                            }
+                            adapter.notifyDataSetChanged();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<List<AppointmentFeedbackDTO>> call, Throwable t) {
+                        // Không cần hiển thị lỗi, giữ nguyên trạng thái nút
+                    }
+                });
+    }
+
 
     private void showLoading(boolean show) {
         progressBar.setVisibility(show ? View.VISIBLE : View.GONE);

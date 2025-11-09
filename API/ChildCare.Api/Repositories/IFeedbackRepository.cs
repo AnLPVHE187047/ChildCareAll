@@ -8,5 +8,8 @@ namespace ChildCare.Api.Repositories
         Task<FeedbackResponseDTO?> GetByIdAsync(int id);
         Task<FeedbackResponseDTO> CreateAsync(FeedbackCreateDTO dto);
         Task<bool> DeleteAsync(int id);
+
+        // 🆕 Lấy các lịch completed mà user chưa feedback
+        Task<IEnumerable<AppointmentFeedbackDTO>> GetCompletedAppointmentsForFeedbackAsync(int userId);
     }
 }

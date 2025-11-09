@@ -10,76 +10,41 @@ public class Appointment {
     private String address;
     private String status;
     private String createdAt;
+    private Integer staffID;
 
-    public int getAppointmentID() {
-        return appointmentID;
-    }
+    // Thêm field kiểm tra feedback
+    private boolean feedbackGiven;
 
-    public void setAppointmentID(int appointmentID) {
-        this.appointmentID = appointmentID;
-    }
+    public int getAppointmentID() { return appointmentID; }
+    public void setAppointmentID(int appointmentID) { this.appointmentID = appointmentID; }
 
-    public String getUserName() {
-        return userName;
-    }
+    public Integer getStaffID() { return staffID; }
+    public void setStaffID(Integer staffID) { this.staffID = staffID; }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+    public String getUserName() { return userName; }
+    public void setUserName(String userName) { this.userName = userName; }
 
-    public String getServiceName() {
-        return serviceName;
-    }
+    public String getServiceName() { return serviceName; }
+    public void setServiceName(String serviceName) { this.serviceName = serviceName; }
 
-    public void setServiceName(String serviceName) {
-        this.serviceName = serviceName;
-    }
+    public String getStaffName() { return staffName; }
+    public void setStaffName(String staffName) { this.staffName = staffName; }
 
-    public String getStaffName() {
-        return staffName;
-    }
+    public String getAppointmentDate() { return appointmentDate; }
+    public void setAppointmentDate(String appointmentDate) { this.appointmentDate = appointmentDate; }
 
-    public void setStaffName(String staffName) {
-        this.staffName = staffName;
-    }
+    public String getAppointmentTime() { return appointmentTime; }
+    public void setAppointmentTime(String appointmentTime) { this.appointmentTime = appointmentTime; }
 
-    public String getAppointmentDate() {
-        return appointmentDate;
-    }
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
 
-    public void setAppointmentDate(String appointmentDate) {
-        this.appointmentDate = appointmentDate;
-    }
+    public String getStatus() { return status; }
+    public void setStatus(String status) { this.status = status; }
 
-    public String getAppointmentTime() {
-        return appointmentTime;
-    }
+    public String getCreatedAt() { return createdAt; }
+    public void setCreatedAt(String createdAt) { this.createdAt = createdAt; }
 
-    public void setAppointmentTime(String appointmentTime) {
-        this.appointmentTime = appointmentTime;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt(String createdAt) {
-        this.createdAt = createdAt;
-    }
+    public boolean isFeedbackGiven() { return feedbackGiven; }
+    public void setFeedbackGiven(boolean feedbackGiven) { this.feedbackGiven = feedbackGiven; }
 }
