@@ -1,34 +1,18 @@
 package com.example.childcare.ui;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ProgressBar;
-import android.widget.RatingBar;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.widget.*;
 import com.example.childcare.R;
-import com.example.childcare.models.AppointmentFeedbackDTO;
 import com.example.childcare.models.Feedback;
 import com.example.childcare.models.FeedbackCreateRequest;
 import com.example.childcare.network.ApiClient;
 import com.example.childcare.network.ApiService;
-
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import retrofit2.*;
 
 public class FeedbackActivity extends AppCompatActivity {
-
-    private static final String TAG = "FeedbackActivity";
 
     private TextView tvServiceName, tvStaffName, tvDate;
     private RatingBar ratingBar;
@@ -39,9 +23,6 @@ public class FeedbackActivity extends AppCompatActivity {
     private int appointmentId;
     private int staffId;
     private int userId;
-    private String serviceName;
-    private String staffName;
-    private String appointmentDate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +30,8 @@ public class FeedbackActivity extends AppCompatActivity {
         setContentView(R.layout.activity_feedback);
 
         initViews();
-        getDataFromIntent();
+        loadIntentData();
         setupToolbar();
-        displayAppointmentInfo();
         setupSubmitButton();
     }
 
@@ -63,85 +43,27 @@ public class FeedbackActivity extends AppCompatActivity {
         etComment = findViewById(R.id.etComment);
         btnSubmit = findViewById(R.id.btnSubmit);
         progressBar = findViewById(R.id.progressBar);
-    }
-
-    private void getDataFromIntent() {
-        appointmentId = getIntent().getIntExtra("appointmentId", 0);
-        staffId = getIntent().getIntExtra("staffId", 0);
-        serviceName = getIntent().getStringExtra("serviceName");
-        staffName = getIntent().getStringExtra("staffName");
-        appointmentDate = getIntent().getStringExtra("appointmentDate");
-
-        Log.d(TAG, "Intent data received: appointmentId=" + appointmentId + ", staffId=" + staffId +
-                ", serviceName=" + serviceName + ", staffName=" + staffName + ", appointmentDate=" + appointmentDate);
 
         // Get userId from SharedPreferences
         SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         userId = prefs.getInt("userID", 0);
+    }
 
-        Log.d(TAG, "userId from SharedPreferences: " + userId);
+    private void loadIntentData() {
+        appointmentId = getIntent().getIntExtra("appointmentId", 0);
+        staffId = getIntent().getIntExtra("staffId", 0);
+        String serviceName = getIntent().getStringExtra("serviceName");
+        String staffName = getIntent().getStringExtra("staffName");
+        String date = getIntent().getStringExtra("appointmentDate");
 
-        // Validate dữ liệu
-        if (appointmentId == 0 || userId == 0) {
-            Log.e(TAG, "Dữ liệu không hợp lệ: appointmentId=" + appointmentId + ", userId=" + userId);
-            Toast.makeText(this, "Dữ liệu không hợp lệ", Toast.LENGTH_SHORT).show();
-            finish();
-            return;
-        }
-
-        if (staffId == 0) {
-            Log.w(TAG, "Không tìm thấy thông tin nhân viên (staffId=0)");
-            Toast.makeText(this, "Không tìm thấy thông tin nhân viên", Toast.LENGTH_SHORT).show();
-            // Có thể finish() hoặc disable nút submit
-        }
+        tvServiceName.setText(serviceName);
+        tvStaffName.setText("Nhân viên: " + staffName);
+        tvDate.setText("Ngày: " + date);
     }
 
     private void setupToolbar() {
         findViewById(R.id.toolbar).setOnClickListener(v -> finish());
     }
-
-    private void displayAppointmentInfo() {
-        tvServiceName.setText(serviceName);
-        tvStaffName.setText("Staff: " + staffName);
-        tvDate.setText("Date: " + appointmentDate);
-
-        checkIfAlreadyFeedback();
-    }
-
-    private void checkIfAlreadyFeedback() {
-        ApiService api = ApiClient.getClientWithAuth(this).create(ApiService.class);
-        api.getCompletedAppointmentsForFeedback(userId).enqueue(new Callback<List<AppointmentFeedbackDTO>>() {
-            @Override
-            public void onResponse(Call<List<AppointmentFeedbackDTO>> call, Response<List<AppointmentFeedbackDTO>> response) {
-                if (response.isSuccessful() && response.body() != null) {
-                    List<AppointmentFeedbackDTO> list = response.body();
-                    boolean already = false;
-                    for (AppointmentFeedbackDTO a : list) {
-                        if (a.getAppointmentID() == appointmentId && a.isFeedbackGiven()) {
-                            already = true;
-                            break;
-                        }
-                    }
-
-                    if (already) {
-                        btnSubmit.setText("Đã đánh giá");
-                        btnSubmit.setEnabled(false);
-                    } else {
-                        btnSubmit.setText("⭐ Đánh giá dịch vụ");
-                        btnSubmit.setEnabled(true);
-                    }
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<AppointmentFeedbackDTO>> call, Throwable t) {
-                Log.e(TAG, "Lỗi check feedback", t);
-                btnSubmit.setText("⭐ Đánh giá dịch vụ");
-                btnSubmit.setEnabled(true);
-            }
-        });
-    }
-
 
     private void setupSubmitButton() {
         btnSubmit.setOnClickListener(v -> submitFeedback());
@@ -151,96 +73,61 @@ public class FeedbackActivity extends AppCompatActivity {
         float rating = ratingBar.getRating();
         String comment = etComment.getText().toString().trim();
 
-        Log.d(TAG, "Submit clicked: rating=" + rating + ", comment=" + comment);
-
-        // Validation
         if (rating == 0) {
             Toast.makeText(this, "Vui lòng chọn số sao đánh giá", Toast.LENGTH_SHORT).show();
-            Log.w(TAG, "Rating = 0, không gửi feedback");
             return;
         }
 
-        if (comment.isEmpty()) {
-            Toast.makeText(this, "Vui lòng nhập nhận xét", Toast.LENGTH_SHORT).show();
-            Log.w(TAG, "Comment rỗng, không gửi feedback");
-            return;
-        }
-
-        if (staffId == 0) {
-            Toast.makeText(this, "Không tìm thấy thông tin nhân viên", Toast.LENGTH_SHORT).show();
-            Log.w(TAG, "staffId = 0, không gửi feedback");
-            return;
-        }
-
-        showLoading(true);
-        btnSubmit.setEnabled(false);
-
+        // ✅ Tạo request với AppointmentID
         FeedbackCreateRequest request = new FeedbackCreateRequest(
                 userId,
                 staffId,
+                appointmentId,  // ✅ Truyền appointmentId
                 (int) rating,
-                comment
+                comment.isEmpty() ? null : comment
         );
 
-        Log.d(TAG, "Sending feedback request: " + request.toString());
+        showLoading(true);
 
         ApiService api = ApiClient.getClientWithAuth(this).create(ApiService.class);
-        Call<Feedback> call = api.createFeedback(request);
-
-        call.enqueue(new Callback<Feedback>() {
+        api.createFeedback(request).enqueue(new Callback<Feedback>() {
             @Override
             public void onResponse(Call<Feedback> call, Response<Feedback> response) {
-                runOnUiThread(() -> {
-                    showLoading(false);
-                    btnSubmit.setEnabled(true);
+                showLoading(false);
 
-                    if (response.isSuccessful() && response.body() != null) {
-                        Log.d(TAG, "Feedback response successful: " + response.body());
-                        Toast.makeText(FeedbackActivity.this,
-                                "Đánh giá đã được gửi thành công!", Toast.LENGTH_SHORT).show();
+                if (response.isSuccessful()) {
+                    Toast.makeText(FeedbackActivity.this,
+                            "✓ Cảm ơn bạn đã đánh giá!", Toast.LENGTH_SHORT).show();
+                    finish();
+                } else {
+                    try {
+                        String errorBody = response.errorBody() != null
+                                ? response.errorBody().string()
+                                : "Unknown error";
 
-                        new android.os.Handler().postDelayed(() -> {
-                            setResult(RESULT_OK);
-                            finish();
-                        }, 500);
-                    } else {
-                        String errorMsg = "Không thể gửi đánh giá";
-                        try {
-                            if (response.errorBody() != null) {
-                                String errorBody = response.errorBody().string();
-                                Log.e(TAG, "Feedback response errorBody: " + errorBody);
-                                if (errorBody.contains("already given feedback")) {
-                                    errorMsg = "Bạn đã đánh giá nhân viên này rồi";
-                                } else if (errorBody.contains("completed appointments")) {
-                                    errorMsg = "Bạn chỉ có thể đánh giá sau khi hoàn thành dịch vụ";
-                                } else {
-                                    errorMsg = errorBody;
-                                }
-                            }
-                        } catch (Exception e) {
-                            Log.e(TAG, "Error parsing errorBody", e);
+                        // Parse error message
+                        if (errorBody.contains("already given feedback")) {
+                            Toast.makeText(FeedbackActivity.this,
+                                    "Bạn đã đánh giá lịch hẹn này rồi", Toast.LENGTH_LONG).show();
+                        } else if (errorBody.contains("not completed")) {
+                            Toast.makeText(FeedbackActivity.this,
+                                    "Chỉ có thể đánh giá sau khi hoàn thành dịch vụ", Toast.LENGTH_LONG).show();
+                        } else {
+                            Toast.makeText(FeedbackActivity.this,
+                                    "Lỗi: " + response.code(), Toast.LENGTH_SHORT).show();
                         }
-                        Toast.makeText(FeedbackActivity.this, errorMsg, Toast.LENGTH_LONG).show();
+                    } catch (Exception e) {
+                        Toast.makeText(FeedbackActivity.this,
+                                "Gửi đánh giá thất bại", Toast.LENGTH_SHORT).show();
                     }
-                });
+                }
             }
 
             @Override
             public void onFailure(Call<Feedback> call, Throwable t) {
-                runOnUiThread(() -> {
-                    showLoading(false);
-                    btnSubmit.setEnabled(true);
-
-                    String errorMsg = "Lỗi kết nối: ";
-                    if (t.getMessage() != null) {
-                        errorMsg += t.getMessage();
-                    } else {
-                        errorMsg += "Không thể kết nối đến server";
-                    }
-
-                    Log.e(TAG, "Feedback request failed", t);
-                    Toast.makeText(FeedbackActivity.this, errorMsg, Toast.LENGTH_LONG).show();
-                });
+                showLoading(false);
+                Toast.makeText(FeedbackActivity.this,
+                        "Lỗi kết nối: " + t.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }

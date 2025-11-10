@@ -116,7 +116,7 @@ public class AppointmentDetailActivity extends AppCompatActivity {
         if ("Staff".equalsIgnoreCase(role)) {
             btnCancelAppointment.setVisibility(View.GONE);
         } else {
-            if (apt.getStatus().equalsIgnoreCase("pending") || apt.getStatus().equalsIgnoreCase("confirmed")) {
+            if (apt.getStatus().equalsIgnoreCase("pending")) {
                 btnCancelAppointment.setVisibility(View.VISIBLE);
                 btnCancelAppointment.setOnClickListener(v -> confirmCancelAppointment());
             } else {

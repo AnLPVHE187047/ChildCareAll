@@ -4,13 +4,18 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.Calendar;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -19,6 +24,8 @@ import com.example.childcare.adapters.StaffAppointmentAdapter;
 import com.example.childcare.models.Appointment;
 import com.example.childcare.network.ApiClient;
 import com.example.childcare.network.ApiService;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,8 +34,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class StaffHomeActivity extends AppCompatActivity {
+public class StaffHomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
+    private DrawerLayout drawerLayout;
     private RecyclerView rvAppointments;
     private ProgressBar progressBar;
     private LinearLayout tvEmptyState;
@@ -40,27 +48,13 @@ public class StaffHomeActivity extends AppCompatActivity {
     private Spinner spnMonth, spnWeek;
     private int staffId = 0;
 
-    // Lưu trữ thông tin tuần
-    private static class WeekInfo {
-        int weekNumber;
-        String displayText;
-
-        WeekInfo(int weekNumber, String displayText) {
-            this.weekNumber = weekNumber;
-            this.displayText = displayText;
-        }
-
-        @Override
-        public String toString() {
-            return displayText;
-        }
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_staff_home);
 
+        // Initialize views
+        drawerLayout = findViewById(R.id.drawerLayout);
         rvAppointments = findViewById(R.id.rvAppointments);
         progressBar = findViewById(R.id.progressBar);
         tvEmptyState = findViewById(R.id.tvEmptyState);
@@ -68,9 +62,11 @@ public class StaffHomeActivity extends AppCompatActivity {
         spnMonth = findViewById(R.id.spnMonth);
         spnWeek = findViewById(R.id.spnWeek);
 
+        // Setup RecyclerView
         rvAppointments.setLayoutManager(new LinearLayoutManager(this));
         adapter = new StaffAppointmentAdapter(this, appointmentList);
         rvAppointments.setAdapter(adapter);
+
         adapter.setOnItemClickListener(new StaffAppointmentAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(Appointment appointment) {
@@ -86,23 +82,82 @@ public class StaffHomeActivity extends AppCompatActivity {
             }
         });
 
-        // Spinner setup
+        // Setup Navigation Drawer
+        NavigationView navigationView = findViewById(R.id.navView);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        // Setup toolbar with drawer toggle
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbarStaff);
+        setSupportActionBar(toolbar);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawerLayout, toolbar,
+                R.string.navigation_drawer_open,
+                R.string.navigation_drawer_close
+        );
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        // Setup other components
         setupSpinners();
         setupDaySelector();
+        setupListeners();
 
-        // Load staff ID
+        // Load data
         SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         int userId = prefs.getInt("userID", 0);
+
         startPolling();
         fetchStaffId(userId);
-        setupListeners();
-        findViewById(R.id.toolbarStaff).setOnClickListener(v -> onBackPressed());
     }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.nav_schedule) {
+            // Already on this screen
+            drawerLayout.closeDrawer(GravityCompat.START);
+            return true;
+        } else if (id == R.id.nav_profile) {
+            startActivity(new Intent(this, ProfileActivity.class));
+            drawerLayout.closeDrawer(GravityCompat.START);
+            return true;
+        } else if (id == R.id.nav_feedback) {
+            startActivity(new Intent(this, StaffFeedbackActivity.class));
+            drawerLayout.closeDrawer(GravityCompat.START);
+            return true;
+        } else if (id == R.id.nav_logout) {
+            logout();
+            return true;
+        }
+
+        return false;
+    }
+
+    private void logout() {
+        SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        prefs.edit().clear().apply();
+
+        Intent intent = new Intent(this, LoginActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    // ... (giữ nguyên các phương thức còn lại từ code cũ)
 
     private void changeAppointmentStatus(int appointmentId, String newStatus) {
         ApiService api = ApiClient.getClientWithAuth(this).create(ApiService.class);
-
-        // Show loading indicator (optional)
         showLoading(true);
 
         api.updateAppointmentStatus(appointmentId, newStatus)
@@ -110,18 +165,15 @@ public class StaffHomeActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<Void> call, Response<Void> response) {
                         showLoading(false);
-
                         if (response.isSuccessful()) {
                             String message = getSuccessMessage(newStatus);
-                            Toast.makeText(StaffHomeActivity.this, message, Toast.LENGTH_SHORT).show();
-                            loadAppointments(); // refresh list
+                            Snackbar.make(rvAppointments, message, Snackbar.LENGTH_LONG).show();
+                            loadAppointments();
                         } else {
-                            // Parse error message from backend
                             String errorMsg = "Không thể cập nhật trạng thái";
                             try {
                                 if (response.errorBody() != null) {
                                     String errorBody = response.errorBody().string();
-                                    // Try to extract message from JSON
                                     if (errorBody.contains("message")) {
                                         int start = errorBody.indexOf("\"message\":\"") + 11;
                                         int end = errorBody.indexOf("\"", start);
@@ -133,28 +185,25 @@ public class StaffHomeActivity extends AppCompatActivity {
                             } catch (Exception e) {
                                 errorMsg += " (Code: " + response.code() + ")";
                             }
-                            Toast.makeText(StaffHomeActivity.this, errorMsg, Toast.LENGTH_LONG).show();
+                            Snackbar.make(rvAppointments, errorMsg, Snackbar.LENGTH_LONG).show();
                         }
                     }
 
                     @Override
                     public void onFailure(Call<Void> call, Throwable t) {
                         showLoading(false);
-                        Toast.makeText(StaffHomeActivity.this, "Lỗi kết nối: " + t.getMessage(), Toast.LENGTH_LONG).show();
+                        Snackbar.make(rvAppointments, "Lỗi kết nối: " + t.getMessage(), Snackbar.LENGTH_LONG).show();
                     }
                 });
     }
 
+
     private String getSuccessMessage(String status) {
         switch (status) {
-            case "Confirmed":
-                return "✓ Đã xác nhận lịch hẹn";
-            case "Completed":
-                return "✓ Đã hoàn tất lịch hẹn";
-            case "Cancelled":
-                return "✓ Đã hủy lịch hẹn";
-            default:
-                return "✓ Cập nhật thành công";
+            case "Confirmed": return "✓ Đã xác nhận lịch hẹn";
+            case "Completed": return "✓ Đã hoàn tất lịch hẹn";
+            case "Cancelled": return "✓ Đã hủy lịch hẹn";
+            default: return "✓ Cập nhật thành công";
         }
     }
 
@@ -164,7 +213,6 @@ public class StaffHomeActivity extends AppCompatActivity {
 
         Calendar cal = Calendar.getInstance();
         int todayJava = cal.get(Calendar.DAY_OF_WEEK);
-
         String[] daysLabel = {"CN", "T2", "T3", "T4", "T5", "T6", "T7"};
 
         for (int i = 0; i < 7; i++) {
@@ -176,15 +224,14 @@ public class StaffHomeActivity extends AppCompatActivity {
             btnDay.setPadding(24, 12, 24, 12);
             btnDay.setBackgroundResource(R.drawable.bg_day_selector);
 
-            // Highlight today
-            if (i == 0) { // CN (Sunday)
+            if (i == 0) {
                 if (todayJava == Calendar.SUNDAY) {
                     btnDay.setBackgroundTintList(getColorStateList(R.color.teal_700));
                     btnDay.setTextColor(Color.WHITE);
                 } else {
                     btnDay.setTextColor(Color.BLACK);
                 }
-            } else { // T2-T7 (Monday-Saturday)
+            } else {
                 if (todayJava == i + 1) {
                     btnDay.setBackgroundTintList(getColorStateList(R.color.teal_700));
                     btnDay.setTextColor(Color.WHITE);
@@ -194,7 +241,6 @@ public class StaffHomeActivity extends AppCompatActivity {
             }
 
             btnDay.setOnClickListener(v -> {
-                // Reset all buttons
                 for (int j = 0; j < dayContainer.getChildCount(); j++) {
                     Button b = (Button) dayContainer.getChildAt(j);
                     b.setBackgroundTintList(getColorStateList(android.R.color.transparent));
@@ -203,20 +249,13 @@ public class StaffHomeActivity extends AppCompatActivity {
                 btnDay.setBackgroundTintList(getColorStateList(R.color.teal_700));
                 btnDay.setTextColor(Color.WHITE);
 
-                // Map to server format: 1=Mon, 2=Tue, ..., 7=Sun
-                if (idx == 0) {
-                    selectedDayOfWeek = 7; // Sunday
-                } else {
-                    selectedDayOfWeek = idx; // 1-6 = Mon-Sat
-                }
-
+                selectedDayOfWeek = (idx == 0) ? 7 : idx;
                 loadAppointments();
             });
 
             dayContainer.addView(btnDay);
         }
 
-        // Add "All" button
         Button btnAll = new Button(this);
         btnAll.setText("Tất cả");
         btnAll.setAllCaps(false);
@@ -242,7 +281,7 @@ public class StaffHomeActivity extends AppCompatActivity {
             public void run() {
                 runOnUiThread(() -> loadAppointments());
             }
-        }, 0, 60000); // Poll every 60 seconds
+        }, 0, 60000);
     }
 
     @Override
@@ -258,10 +297,8 @@ public class StaffHomeActivity extends AppCompatActivity {
         edtSearchCustomer.addTextChangedListener(new android.text.TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
-
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) { }
-
             @Override
             public void afterTextChanged(android.text.Editable s) {
                 loadAppointments();
@@ -271,11 +308,9 @@ public class StaffHomeActivity extends AppCompatActivity {
         spnMonth.setOnItemSelectedListener(new android.widget.AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(android.widget.AdapterView<?> parent, View view, int position, long id) {
-                // Update week spinner when month changes
                 updateWeekSpinner();
                 loadAppointments();
             }
-
             @Override
             public void onNothingSelected(android.widget.AdapterView<?> parent) { }
         });
@@ -285,14 +320,12 @@ public class StaffHomeActivity extends AppCompatActivity {
             public void onItemSelected(android.widget.AdapterView<?> parent, View view, int position, long id) {
                 loadAppointments();
             }
-
             @Override
             public void onNothingSelected(android.widget.AdapterView<?> parent) { }
         });
     }
 
     private void setupSpinners() {
-        // Month spinner
         ArrayAdapter<String> monthAdapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_spinner_item,
                 new String[]{"Tất cả", "Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6",
@@ -300,123 +333,18 @@ public class StaffHomeActivity extends AppCompatActivity {
         monthAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnMonth.setAdapter(monthAdapter);
 
-        // Set current month as default
         Calendar cal = Calendar.getInstance();
-        spnMonth.setSelection(cal.get(Calendar.MONTH) + 1); // +1 vì có "Tất cả" ở đầu
+        spnMonth.setSelection(cal.get(Calendar.MONTH) + 1);
 
-        // Week spinner - will be populated based on selected month
         updateWeekSpinner();
     }
 
-    /**
-     * Update week spinner based on selected month
-     * Display format: "1-7/11", "8-14/11", etc.
-     */
     private void updateWeekSpinner() {
-        Integer month = getSelectedMonth();
-
-        if (month == null) {
-            // Show generic weeks if no month selected
-            ArrayAdapter<String> weekAdapter = new ArrayAdapter<>(this,
-                    android.R.layout.simple_spinner_item,
-                    new String[]{"Tất cả", "Tuần 1", "Tuần 2", "Tuần 3", "Tuần 4", "Tuần 5"});
-            weekAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-            spnWeek.setAdapter(weekAdapter);
-            return;
-        }
-
-        // Calculate weeks for the selected month
-        int year = Calendar.getInstance().get(Calendar.YEAR);
-        List<WeekInfo> weeks = calculateWeeksInMonth(year, month);
-
-        // Create display list with "Tất cả" option
-        List<String> weekDisplayList = new ArrayList<>();
-        weekDisplayList.add("Tất cả");
-        for (WeekInfo week : weeks) {
-            weekDisplayList.add(week.displayText);
-        }
-
         ArrayAdapter<String> weekAdapter = new ArrayAdapter<>(this,
-                android.R.layout.simple_spinner_item, weekDisplayList);
+                android.R.layout.simple_spinner_item,
+                new String[]{"Tất cả", "Tuần 1", "Tuần 2", "Tuần 3", "Tuần 4", "Tuần 5"});
         weekAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spnWeek.setAdapter(weekAdapter);
-    }
-
-    /**
-     * Calculate weeks in a month with date ranges
-     * Logic: Tuần bắt đầu từ thứ 2 (Monday), tuần 1 là tuần chứa ngày 1 của tháng
-     *
-     * VD: Tháng 11/2025 bắt đầu vào Thứ 7 (Saturday):
-     * - Tuần 1: Thứ 7 (1/11) → Chủ nhật (2/11)
-     * - Tuần 2: Thứ 2 (3/11) → Chủ nhật (9/11)
-     * - Tuần 3: Thứ 2 (10/11) → Chủ nhật (16/11)
-     * ...
-     */
-    private List<WeekInfo> calculateWeeksInMonth(int year, int month) {
-        List<WeekInfo> weeks = new ArrayList<>();
-
-        Calendar firstDayOfMonth = Calendar.getInstance();
-        firstDayOfMonth.set(year, month - 1, 1); // month-1 vì Calendar.MONTH bắt đầu từ 0
-
-        Calendar lastDayOfMonth = Calendar.getInstance();
-        lastDayOfMonth.set(year, month - 1, firstDayOfMonth.getActualMaximum(Calendar.DAY_OF_MONTH));
-
-        // Tìm thứ 2 của tuần chứa ngày 1 (có thể là trước ngày 1)
-        Calendar firstMonday = (Calendar) firstDayOfMonth.clone();
-        int dayOfWeek = firstDayOfMonth.get(Calendar.DAY_OF_WEEK);
-
-        // Tính số ngày cần lùi để về thứ 2
-        // Calendar: Sunday=1, Monday=2, ..., Saturday=7
-        int daysFromMonday = (dayOfWeek - Calendar.MONDAY + 7) % 7;
-        firstMonday.add(Calendar.DAY_OF_MONTH, -daysFromMonday);
-
-        // Duyệt từng tuần
-        Calendar weekStart = (Calendar) firstMonday.clone();
-        int weekNumber = 1;
-
-        while (weekStart.get(Calendar.DAY_OF_MONTH) <= lastDayOfMonth.get(Calendar.DAY_OF_MONTH)
-                || weekStart.get(Calendar.MONTH) < lastDayOfMonth.get(Calendar.MONTH)) {
-
-            Calendar weekEnd = (Calendar) weekStart.clone();
-            weekEnd.add(Calendar.DAY_OF_MONTH, 6); // Tuần có 7 ngày (từ T2 đến CN)
-
-            // Xác định ngày bắt đầu và kết thúc trong tháng
-            int startDay, endDay;
-
-            // Nếu tuần bắt đầu trước tháng, lấy từ ngày 1
-            if (weekStart.get(Calendar.MONTH) < firstDayOfMonth.get(Calendar.MONTH)) {
-                startDay = 1;
-            } else {
-                startDay = weekStart.get(Calendar.DAY_OF_MONTH);
-            }
-
-            // Nếu tuần kết thúc sau tháng, lấy đến ngày cuối tháng
-            if (weekEnd.get(Calendar.MONTH) > lastDayOfMonth.get(Calendar.MONTH)) {
-                endDay = lastDayOfMonth.get(Calendar.DAY_OF_MONTH);
-            } else {
-                endDay = weekEnd.get(Calendar.DAY_OF_MONTH);
-            }
-
-            // Kiểm tra nếu tuần này có ít nhất 1 ngày trong tháng
-            if (startDay >= 1 && startDay <= lastDayOfMonth.get(Calendar.DAY_OF_MONTH)) {
-                String displayText = String.format("%d-%d/%d", startDay, endDay, month);
-                weeks.add(new WeekInfo(weekNumber, displayText));
-                weekNumber++;
-            }
-
-            // Chuyển sang tuần tiếp theo (cộng 7 ngày)
-            weekStart.add(Calendar.DAY_OF_MONTH, 7);
-
-            // Safety check: tối đa 6 tuần trong 1 tháng
-            if (weekNumber > 6) break;
-
-            // Nếu tuần tiếp theo đã ra khỏi tháng hoàn toàn thì dừng
-            if (weekStart.get(Calendar.MONTH) > lastDayOfMonth.get(Calendar.MONTH)) {
-                break;
-            }
-        }
-
-        return weeks;
     }
 
     private void fetchStaffId(int userId) {
@@ -486,19 +414,13 @@ public class StaffHomeActivity extends AppCompatActivity {
         rvAppointments.setVisibility(show ? View.GONE : View.VISIBLE);
     }
 
-    /**
-     * Get selected month as integer (1-12) or null if "Tất cả"
-     */
     private Integer getSelectedMonth() {
         int position = spnMonth.getSelectedItemPosition();
-        return position == 0 ? null : position; // 0 = "Tất cả", 1-12 = tháng 1-12
+        return position == 0 ? null : position;
     }
 
-    /**
-     * Get selected week number (1-6) or null if "Tất cả"
-     */
     private Integer getSelectedWeek() {
         int position = spnWeek.getSelectedItemPosition();
-        return position == 0 ? null : position; // 0 = "Tất cả", 1-6 = tuần 1-6
+        return position == 0 ? null : position;
     }
 }

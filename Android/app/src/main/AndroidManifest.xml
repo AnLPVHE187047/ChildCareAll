@@ -17,7 +17,9 @@
         android:usesCleartextTraffic="true"
         android:networkSecurityConfig="@xml/network_security_config"
         >
-        <activity android:name=".ui.RegisterActivity" />
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
         <activity android:name=".ui.HomeActivity" />
         <activity android:name=".ui.ServiceDetailActivity" />
         <activity android:name=".ui.BookAppointmentActivity" />
@@ -26,6 +28,7 @@
         <activity android:name=".ui.ProfileActivity" />
         <activity android:name=".ui.StaffHomeActivity" />
         <activity android:name=".ui.FeedbackActivity" />
+        <activity android:name=".ui.StaffFeedbackActivity" />
         <activity
             android:name=".ui.LoginActivity"
             android:exported="true">

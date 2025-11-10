@@ -1,143 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<androidx.drawerlayout.widget.DrawerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FAFAFA">
+    android:layout_height="match_parent">
 
-    <!-- Toolbar -->
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/toolbarStaff"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:backgroundTint="@color/teal_700"
-        android:title="Lịch làm việc của tôi"
-        android:titleTextColor="@android:color/white"
-        app:navigationIcon="@drawable/ic_menu" />
-
-    <!-- Nội dung -->
-    <LinearLayout
+    <!-- Main Content -->
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="12dp"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:background="#FAFAFA">
 
-        <!-- Bộ lọc -->
-        <androidx.cardview.widget.CardView
+        <!-- Toolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarStaff"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="14dp"
-            app:cardElevation="6dp"
-            android:padding="12dp">
+            android:layout_height="?attr/actionBarSize"
+            android:backgroundTint="@color/teal_700"
+            android:title="Lịch làm việc của tôi"
+            android:titleTextColor="@android:color/white" />
 
-            <LinearLayout
+        <!-- Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <!-- Filter Card -->
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <EditText
-                    android:id="@+id/edtSearchCustomer"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="🔍 Tìm khách hàng theo tên"
-                    android:padding="10dp"
-                    android:background="@drawable/bg_search"
-                    android:textColorHint="#999999"
-                    android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="6dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical">
+                    android:orientation="vertical"
+                    android:padding="12dp">
 
-                    <Spinner
-                        android:id="@+id/spnMonth"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
+                    <EditText
+                        android:id="@+id/edtSearchCustomer"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:spinnerMode="dropdown"/>
+                        android:hint="🔍 Tìm khách hàng theo tên"
+                        android:padding="10dp"
+                        android:background="@drawable/bg_search"
+                        android:textColorHint="#999999"
+                        android:layout_marginBottom="10dp"/>
 
-                    <Spinner
-                        android:id="@+id/spnWeek"
-                        android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:layout_marginStart="8dp"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:spinnerMode="dropdown"/>
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <Spinner
+                            android:id="@+id/spnMonth"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown"/>
+
+                        <Spinner
+                            android:id="@+id/spnWeek"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="8dp"
+                            android:layout_height="wrap_content"
+                            android:spinnerMode="dropdown"/>
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-        <!-- Thanh chọn ngày trong tuần -->
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:scrollbars="none">
+            <!-- Day Selector -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:scrollbars="none">
 
+                <LinearLayout
+                    android:id="@+id/lnrDaySelector"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"/>
+            </HorizontalScrollView>
+
+            <!-- Appointments List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAppointments"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:clipToPadding="false"/>
+
+            <!-- Empty State -->
             <LinearLayout
-                android:id="@+id/lnrDaySelector"
-                android:layout_width="wrap_content"
+                android:id="@+id/tvEmptyState"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="24dp"
+                android:visibility="gone">
 
-                <!-- Các nút ngày sẽ được thêm động trong code -->
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_calendar_empty"
+                    android:alpha="0.6"
+                    app:tint="#999999"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Không có lịch làm việc"
+                    android:textSize="16sp"
+                    android:textColor="#777777"
+                    android:layout_marginTop="12dp"/>
             </LinearLayout>
-        </HorizontalScrollView>
 
-        <!-- Danh sách lịch -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvAppointments"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:paddingBottom="8dp"
-            android:clipToPadding="false"/>
-
-        <!-- Trạng thái trống -->
-        <LinearLayout
-            android:id="@+id/tvEmptyState"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:padding="24dp"
-            android:visibility="gone">
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ic_calendar_empty"
-                android:alpha="0.6"
-                app:tint="#999999"/>
-
-            <TextView
+            <!-- Loading -->
+            <ProgressBar
+                android:id="@+id/progressBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Không có lịch làm việc trong tuần này"
-                android:textSize="16sp"
-                android:textColor="#777777"
-                android:layout_marginTop="12dp"/>
-
-            <Button
-                android:id="@+id/btnRefresh"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="↻ Tải lại"
-                android:textAllCaps="false"
-                android:layout_marginTop="8dp"/>
+                android:layout_gravity="center"
+                android:visibility="gone"/>
         </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-        <!-- Loading -->
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:visibility="gone"/>
-    </LinearLayout>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@drawable/staff_drawer_menu"
+        app:headerLayout="@layout/nav_header_staff" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

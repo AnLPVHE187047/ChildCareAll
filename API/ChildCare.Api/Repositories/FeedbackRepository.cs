@@ -52,25 +52,27 @@ namespace ChildCare.Api.Repositories
 
         public async Task<FeedbackResponseDTO> CreateAsync(FeedbackCreateDTO dto)
         {
-            bool hasCompletedAppointment = await _context.Appointments.AnyAsync(a =>
-                a.UserId == dto.UserID &&
-                a.StaffId == dto.StaffID &&
-                a.Status == "Completed");
+            var appointment = await _context.Appointments
+                .Include(a => a.Staff)
+                .FirstOrDefaultAsync(a =>
+                    a.AppointmentId == dto.AppointmentID &&
+                    a.UserId == dto.UserID &&
+                    a.Status == "Completed");
 
-            if (!hasCompletedAppointment)
-                throw new Exception("You can only feedback after completed appointments.");
+            if (appointment == null)
+                throw new Exception("Appointment not found or not completed yet.");
 
             bool alreadyFeedback = await _context.Feedbacks.AnyAsync(f =>
-                f.UserId == dto.UserID &&
-                f.StaffId == dto.StaffID);
+                f.AppointmentId == dto.AppointmentID);
 
             if (alreadyFeedback)
-                throw new Exception("You have already given feedback for this staff.");
+                throw new Exception("You have already given feedback for this appointment.");
 
             var f = new Feedback
             {
                 UserId = dto.UserID,
-                StaffId = dto.StaffID,
+                StaffId = dto.StaffID ?? appointment.StaffId,
+                AppointmentId = dto.AppointmentID, 
                 Rating = dto.Rating,
                 Comment = dto.Comment,
                 CreatedAt = DateTime.UtcNow
@@ -105,12 +107,45 @@ namespace ChildCare.Api.Repositories
                     StaffName = a.Staff != null ? a.Staff.FullName : "N/A",
                     AppointmentDate = a.AppointmentDate,
                     AppointmentTime = a.AppointmentTime,
-                    IsFeedbackGiven = _context.Feedbacks.Any(f =>
-                        f.UserId == userId && f.StaffId == a.StaffId)
+                    // ✅ Kiểm tra theo AppointmentId thay vì UserId + StaffId
+                    IsFeedbackGiven = _context.Feedbacks.Any(f => f.AppointmentId == a.AppointmentId)
                 })
                 .ToListAsync();
 
             return completedAppointments;
+        }
+        public async Task<IEnumerable<FeedbackResponseDTO_Staff>> GetFeedbacksByStaffIdAsync(int staffId)
+        {
+            return await (from f in _context.Feedbacks
+                          join a in _context.Appointments on f.AppointmentId equals a.AppointmentId 
+                          join s in _context.Services on a.ServiceId equals s.ServiceId
+                          where f.StaffId == staffId
+                          orderby f.CreatedAt descending
+                          select new FeedbackResponseDTO_Staff
+                          {
+                              FeedbackID = f.FeedbackId,
+                              UserName = f.User.FullName,
+                              ServiceName = s.Name,
+                              Rating = f.Rating,
+                              Comment = f.Comment,
+                              CreatedAt = f.CreatedAt ?? DateTime.Now,
+                              AppointmentDate = a.AppointmentDate.ToDateTime(TimeOnly.MinValue)
+                          })
+                          .Distinct() 
+                          .ToListAsync();
+        }
+
+
+        public async Task<double> GetAverageRatingByStaffIdAsync(int staffId)
+        {
+            var feedbacks = await _context.Feedbacks
+                .Where(f => f.StaffId == staffId)
+                .ToListAsync();
+
+            if (!feedbacks.Any())
+                return 0;
+
+            return Math.Round(feedbacks.Average(f => f.Rating), 1);
         }
     }
 }

@@ -209,7 +209,7 @@ public class StaffAppointmentAdapter extends RecyclerView.Adapter<StaffAppointme
                 holder.btnComplete.setVisibility(View.VISIBLE);
             }
             // Có thể cancel (nếu chưa đến ngày)
-            holder.btnCancel.setVisibility(View.VISIBLE);
+            holder.btnCancel.setVisibility(View.GONE);
 
         } else if ("Completed".equalsIgnoreCase(status)) {
             // Completed: không hiện button nào (đã hoàn tất)

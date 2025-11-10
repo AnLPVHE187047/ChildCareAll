@@ -14,10 +14,12 @@ public partial class Feedback
     public int Rating { get; set; }
 
     public string? Comment { get; set; }
+    public int? AppointmentId { get; set; }
 
     public DateTime? CreatedAt { get; set; }
 
     public virtual Staff? Staff { get; set; }
 
     public virtual User User { get; set; } = null!;
+    public virtual Appointment? Appointment { get; set; }
 }

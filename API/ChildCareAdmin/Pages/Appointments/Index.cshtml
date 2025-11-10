@@ -23,23 +23,7 @@
             }
         </select>
     </div>
-    <div class="col">
-        <select name="week" class="form-select">
-            <option value="">All Weeks</option>
-            @for (int w = 1; w <= 5; w++)
-            {
-                @if (Request.Query["week"] == w.ToString())
-                {
-                    <option value="@w" selected>@w</option>
-                }
-                else
-                {
-                    <option value="@w">@w</option>
-                }
 
-            }
-        </select>
-    </div>
     <div class="col">
         <select name="status" class="form-select">
             <option value="">All Status</option>

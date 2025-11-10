@@ -17,5 +17,7 @@ namespace ChildCare.Api.Repositories
         Task<User> AddUserWithImageAsync(User user, IFormFile? imageFile, IWebHostEnvironment env, HttpRequest request);
         Task<User?> GetUserByEmailAsync(string email);
         Task<bool> UpdateUserWithImageAsync(int id, UserUpdateDTO dto, IFormFile? imageFile, IWebHostEnvironment env, HttpRequest request);
+        Task<bool> UpdateUserWithImageAsyncByAdmin(int id, UserUpdateDTO dto, IFormFile? imageFile, IWebHostEnvironment env, HttpRequest request);
+
     }
 }

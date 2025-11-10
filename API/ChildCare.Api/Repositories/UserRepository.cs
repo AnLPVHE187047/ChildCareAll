@@ -137,7 +137,10 @@ namespace ChildCare.Api.Repositories
             user.FullName = dto.FullName;
             user.Email = dto.Email;
             user.Phone = dto.Phone;
-            user.Role = dto.Role;
+            if (!string.IsNullOrEmpty(dto.Role))
+            {
+                user.Role = dto.Role;
+            }
             user.IsActive = dto.IsActive;
 
             await _context.SaveChangesAsync();
@@ -149,12 +152,13 @@ namespace ChildCare.Api.Repositories
         {
             var user = await _context.Users.FindAsync(id);
             if (user == null) return false;
-
+            string originalRole = user.Role;
+            bool originalIsActive = user.IsActive ?? true;
             user.FullName = dto.FullName;
             user.Email = dto.Email;
             user.Phone = dto.Phone;
-            user.Role = dto.Role;
-            user.IsActive = dto.IsActive;
+            user.Role = originalRole;         // ✅ Giữ nguyên Role cũ
+            user.IsActive = originalIsActive;
 
             if (imageFile != null && imageFile.Length > 0)
             {
@@ -198,7 +202,60 @@ namespace ChildCare.Api.Repositories
             await _context.SaveChangesAsync();
             return true;
         }
+        // UPDATE THÔNG TIN + ẢNH
+        public async Task<bool> UpdateUserWithImageAsyncByAdmin(int id, UserUpdateDTO dto, IFormFile? imageFile, IWebHostEnvironment env, HttpRequest request)
+        {
+            var user = await _context.Users.FindAsync(id);
+            if (user == null) return false;
+     
+            user.FullName = dto.FullName;
+            user.Email = dto.Email;
+            user.Phone = dto.Phone;
+            user.Role = dto.Role;         // ✅ Giữ nguyên Role cũ
+            user.IsActive = dto.IsActive;
 
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                string uploadsFolder = Path.Combine(env.WebRootPath, "uploads");
+                if (!Directory.Exists(uploadsFolder))
+                    Directory.CreateDirectory(uploadsFolder);
+
+                // Xóa ảnh cũ
+                if (!string.IsNullOrEmpty(user.ImageUrl))
+                {
+                    try
+                    {
+                        // ✅ Lấy tên file từ URL (dù là relative hay absolute)
+                        string oldFileName = user.ImageUrl.Contains("/uploads/")
+                            ? user.ImageUrl.Split("/uploads/").Last()
+                            : Path.GetFileName(user.ImageUrl);
+
+                        string oldFilePath = Path.Combine(uploadsFolder, oldFileName);
+                        if (File.Exists(oldFilePath))
+                        {
+                            File.Delete(oldFilePath);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"[WARN] Failed to delete old image: {ex.Message}");
+                    }
+                }
+
+                string uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
+                {
+                    await imageFile.CopyToAsync(fileStream);
+                }
+
+                user.ImageUrl = $"/uploads/{uniqueFileName}";
+            }
+
+            await _context.SaveChangesAsync();
+            return true;
+        }
         #endregion
 
         #region DELETE / PASSWORD

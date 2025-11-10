@@ -2,7 +2,9 @@ package com.example.childcare.network;
 
 import com.example.childcare.models.Appointment;
 import com.example.childcare.models.AppointmentCreateRequest;
+import com.example.childcare.models.AverageRatingResponse;
 import com.example.childcare.models.Feedback;
+import com.example.childcare.models.FeedbackStaff;
 import com.example.childcare.models.LoginRequest;
 import com.example.childcare.models.RegisterRequest;
 import com.example.childcare.models.Service;
@@ -103,5 +105,11 @@ public interface ApiService {
 
     @GET("feedbacks")
     Call<List<Feedback>> getAllFeedbacks();
+
+    @GET("feedbacks/staff/{staffId}")
+    Call<List<FeedbackStaff>> getStaffFeedbacks(@Path("staffId") int staffId);
+
+    @GET("feedbacks/staff/{staffId}/rating")
+    Call<AverageRatingResponse> getStaffAverageRating(@Path("staffId") int staffId);
 
 }

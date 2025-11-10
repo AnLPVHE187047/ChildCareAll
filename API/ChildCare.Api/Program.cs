@@ -69,6 +69,8 @@ builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
 builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
 builder.Services.AddScoped<IStaffRepository, StaffRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
+// Thêm vào Program.cs
+builder.Services.AddScoped<IStatisticsRepository, StatisticsRepository>();
 
 var app = builder.Build();
 

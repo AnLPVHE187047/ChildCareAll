@@ -9,6 +9,8 @@ import com.example.childcare.models.RegisterRequest;
 import com.example.childcare.models.UserResponse;
 import com.example.childcare.network.ApiClient;
 import com.example.childcare.network.ApiService;
+import com.google.android.material.snackbar.Snackbar;
+
 import retrofit2.*;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -30,7 +32,7 @@ public class RegisterActivity extends AppCompatActivity {
         btnRegister = findViewById(R.id.btnRegister);
 
         // Spinner setup
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, new String[]{"Parent", "Staff"});
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, new String[]{"Parent"});
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spRole.setAdapter(adapter);
 
@@ -45,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
         String role = spRole.getSelectedItem().toString();
 
         if(fullName.isEmpty() || email.isEmpty() || password.isEmpty()) {
-            Toast.makeText(this, "Please fill all required fields", Toast.LENGTH_SHORT).show();
+            Snackbar.make(findViewById(android.R.id.content), "Please fill all required fields", Snackbar.LENGTH_LONG).show();
             return;
         }
 
@@ -60,9 +62,19 @@ public class RegisterActivity extends AppCompatActivity {
                     startActivity(new Intent(RegisterActivity.this, LoginActivity.class));
                     finish();
                 } else {
-                    Toast.makeText(RegisterActivity.this, "Registration failed: " + response.message(), Toast.LENGTH_SHORT).show();
+                    // đọc body lỗi
+                    String errorMsg = "Registration failed";
+                    try {
+                        if(response.errorBody() != null) {
+                            errorMsg += ": " + response.errorBody().string();
+                        }
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    Snackbar.make(findViewById(android.R.id.content), errorMsg, Snackbar.LENGTH_LONG).show();
                 }
             }
+
 
             @Override
             public void onFailure(Call<UserResponse> call, Throwable t) {

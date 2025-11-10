@@ -74,7 +74,7 @@ namespace ChildCareAdmin.Pages.Users
                 content.Add(streamContent, "imageFile", ImageFile.FileName);
             }
 
-            var response = await client.PutAsync($"users/{id}", content);
+            var response = await client.PutAsync($"users/{id}/admin", content);
 
             if (response.IsSuccessStatusCode)
                 return RedirectToPage("Index");

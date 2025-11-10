@@ -14,14 +14,15 @@ public class FeedbackCreateRequest {
 
     @SerializedName("Comment")
     private String comment;
-
-    public FeedbackCreateRequest(int userID, Integer staffID, int rating, String comment) {
+    @SerializedName("AppointmentID")  // ✅ Thêm này
+    private int appointmentID;
+    public FeedbackCreateRequest(int userID, Integer staffID, int appointmentID, int rating, String comment) {
         this.userID = userID;
         this.staffID = staffID;
+        this.appointmentID = appointmentID;
         this.rating = rating;
         this.comment = comment;
     }
-
     public int getUserID() {
         return userID;
     }
@@ -29,6 +30,8 @@ public class FeedbackCreateRequest {
     public void setUserID(int userID) {
         this.userID = userID;
     }
+    public int getAppointmentID() { return appointmentID; }
+    public void setAppointmentID(int appointmentID) { this.appointmentID = appointmentID; }
 
     public Integer getStaffID() {
         return staffID;

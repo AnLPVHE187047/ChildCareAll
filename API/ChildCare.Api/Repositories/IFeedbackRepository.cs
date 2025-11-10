@@ -11,5 +11,7 @@ namespace ChildCare.Api.Repositories
 
         // 🆕 Lấy các lịch completed mà user chưa feedback
         Task<IEnumerable<AppointmentFeedbackDTO>> GetCompletedAppointmentsForFeedbackAsync(int userId);
+        Task<IEnumerable<FeedbackResponseDTO_Staff>> GetFeedbacksByStaffIdAsync(int staffId);
+        Task<double> GetAverageRatingByStaffIdAsync(int staffId);
     }
 }

@@ -53,6 +53,19 @@ namespace ChildCare.Api.Controllers
             var result = await _repo.GetCompletedAppointmentsForFeedbackAsync(userId);
             return Ok(result);
         }
+        [HttpGet("staff/{staffId}")]
+        public async Task<IActionResult> GetFeedbacksByStaff(int staffId)
+        {
+            var feedbacks = await _repo.GetFeedbacksByStaffIdAsync(staffId);
+            return Ok(feedbacks);
+        }
+
+        [HttpGet("staff/{staffId}/rating")]
+        public async Task<IActionResult> GetAverageRating(int staffId)
+        {
+            var rating = await _repo.GetAverageRatingByStaffIdAsync(staffId);
+            return Ok(new { averageRating = rating });
+        }
 
     }
 }

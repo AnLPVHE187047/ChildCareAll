@@ -72,7 +72,12 @@ namespace ChildCare.Api.Controllers
             var updated = await _repo.UpdateUserWithImageAsync(id, dto, imageFile, _env, Request);
             return updated ? NoContent() : NotFound();
         }
-
+        [HttpPut("{id}/admin")]
+        public async Task<IActionResult> UpdateByAdmin(int id, [FromForm] UserUpdateDTO dto, IFormFile? imageFile)
+        {
+            var updated = await _repo.UpdateUserWithImageAsyncByAdmin(id, dto, imageFile, _env, Request);
+            return updated ? NoContent() : NotFound();
+        }
         // PATCH: api/users/{id}/changepassword
         [HttpPatch("{id}/changepassword")]
         public async Task<IActionResult> ChangePassword(int id, [FromBody] ChangePasswordDTO dto)
